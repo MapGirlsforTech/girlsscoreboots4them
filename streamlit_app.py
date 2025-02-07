@@ -23,7 +23,7 @@ parrafo("Las chicas aprendemos entre otras muchas cosas a programar, entrenar mo
 parrafo("Podéis conocer más sobre este programa a través del siguiente enlace:")
 # technovationchallenge.org
 
-enlace("https://technovationchallenge.org/", "Programa Technovation")
+enlace("https://technovationchallenge.org/", "Programa Technovation Girls")
 # st.markdown('[Programa Technovation](https://technovationchallenge.org/)')
 
 parrafo("Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de zapatos no aptos para el pie puede causar graves lesiones. Este es el caso de nuestra compañera Pilar, así como de otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:")
@@ -37,7 +37,8 @@ parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos a
 parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
 
 parrafo("¿Podrías contestar nuestro cuestionario?")
-parrafo("__Muchas Gracias.__")
 
 enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
+
+parrafo("__Muchas Gracias.__")
 st.image("./images/mapa_grande.png")
