@@ -7,7 +7,7 @@ def parrafo(text):
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
-st.header("MAP Girls Tech")
+st.header("MAP Girls for Tech")
 
 # Presentacion el equipo
 
