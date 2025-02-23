@@ -4,12 +4,15 @@ import streamlit as st
 def parrafo(text):
     st.markdown(text)
 
+# Función para añadir un enlace
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
 st.header("MAP Girls for Tech")
 
-# Presentacion el equipo
+st.markdown("<h1 style='text-align: center;'>MAP Girls for Tech</h1>", unsafe_allow_html=True)
+
+# Texto: Presentación del equipo
 
 st.markdown(
     "Hola, somos **Maite**, **Ana** y **Pilar** y juntas formamos el equipo MAP Girls for Tech. Participamos por tercer año consecutivo en el proyecto Technovation Girls, cuyo objetivo es acercar la tecnología a las chicas y jóvenes de 8 a 18 años, la idea es aumentar con esta iniciativa la presencia de mujeres en las carreras STEM."
