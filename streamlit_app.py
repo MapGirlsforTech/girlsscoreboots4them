@@ -1,5 +1,17 @@
 import streamlit as st
 
+# Cambiar el color de fondo a azul claro
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #ADD8E6;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Función para añadir un párrafo recibiendo un texto como parametro
 def parrafo(text):
     st.markdown(text)
