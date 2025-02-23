@@ -41,4 +41,4 @@ parrafo("¿Podrías contestar nuestro cuestionario?")
 enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
-st.image("./images/Logo-MAP-WEB_APP.png")
+st.image("./images/Logo-Circular-WEB_OK.png")
