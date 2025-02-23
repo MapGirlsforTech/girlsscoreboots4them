@@ -1,5 +1,7 @@
 import streamlit as st
 
+backgroundColor = "#F0F0F0"
+
 # Cambiar el color de fondo a azul claro
 st.markdown(
     """
