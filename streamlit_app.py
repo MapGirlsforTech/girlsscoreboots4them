@@ -13,7 +13,7 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #f0f8ff;  # Aquí puedes poner cualquier color que desees
+        background-color: #f0f8ff;  
     }
     </style>
     """, unsafe_allow_html=True
