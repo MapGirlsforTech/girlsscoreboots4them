@@ -10,7 +10,7 @@ def enlace(enlace, titulo):
 
 st.header("MAP Girls for Tech")
 
-st.markdown("<h1 style='text-align: center;'>MAP Girls for Tech</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
 
 # Texto: Presentación del equipo
 
