@@ -8,6 +8,15 @@ def parrafo(text):
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
+# Cambiar el color de fondo de la página
+st.markdown("""
+    <style>
+    body {
+        background-color: #f0f8ff;  /* Color de fondo (puedes cambiarlo) */
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # st.header("MAP Girls for Tech")
 
 st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
