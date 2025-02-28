@@ -67,5 +67,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+parrafo(" ")
+
 parrafo("__Muchas Gracias.__")
 st.image("./images/Logo-Circular-WEB_OK.png", width=400)
