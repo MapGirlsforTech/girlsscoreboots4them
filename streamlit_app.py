@@ -57,13 +57,3 @@ enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
 st.image("./images/Logo-Circular-WEB_OK.png", width=400)
-
-# Define el HTML y CSS para centrar el texto
-center_text_html = """
-<div style='text-align: center; margin: 0 20%;'>
-    <p>#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**.</p>
-</div>
-"""
-
-# Inserta el HTML en la aplicación
-st.markdown(center_text_html, unsafe_allow_html=True)
