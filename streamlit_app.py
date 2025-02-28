@@ -45,3 +45,15 @@ enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
 st.image("./images/Logo-Circular-WEB_OK.png", width=400)
+
+# Centrar la cita, pero alineada a la izquierda
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center; width: 80%;">
+        <blockquote style="text-align: left; font-style: italic; font-size: 1.2em; border-left: 5px solid #ccc; padding-left: 10px;">
+            "Esta es una cita que está alineada a la izquierda, pero centrada en la página."
+        </blockquote>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
