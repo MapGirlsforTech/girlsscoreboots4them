@@ -64,3 +64,6 @@ center_text_html = """
     <p>Este es un texto centrado con márgenes a los lados en Streamlit.</p>
 </div>
 """
+
+# Inserta el HTML en la aplicación
+st.markdown(center_text_html, unsafe_allow_html=True)
