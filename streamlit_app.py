@@ -65,7 +65,9 @@ parrafo("Ante esta problemática, la falta de calzado deportivo adecuado al pie 
 
 parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos ayudarán a darle forma  al proyecto y tratar de buscar una solución a este problema: ")
 
-parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
+# parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
+
+st.markdown("<h3 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h3>", unsafe_allow_html=True)
 
 parrafo("¿Podrías contestar nuestro cuestionario?")
 
