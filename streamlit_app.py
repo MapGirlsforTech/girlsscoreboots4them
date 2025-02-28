@@ -57,3 +57,10 @@ enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
 st.image("./images/Logo-Circular-WEB_OK.png", width=400)
+
+# Define el HTML y CSS para centrar el texto
+center_text_html = """
+<div style='text-align: center; margin: 0 20%;'>
+    <p>Este es un texto centrado con márgenes a los lados en Streamlit.</p>
+</div>
+"""
