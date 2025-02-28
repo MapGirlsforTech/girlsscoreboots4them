@@ -8,20 +8,6 @@ def parrafo(text):
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
-# Define el CSS para CENTRAR una imagen con anco del 50%
-center_image_css = """
-<style>
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-</style>
-"""
-# Inserta el CSS para la imagen en la app
-st.markdown(center_image_css, unsafe_allow_html=True)
-
 # st.header("MAP Girls for Tech")
 
 st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
@@ -58,6 +44,4 @@ parrafo("¿Podrías contestar nuestro cuestionario?")
 enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
-# st.image("./images/Logo-Circular-WEB_OK.png", width=400)
-
-st.image("/images/Logo-Circular-WEB_OK.png", caption='Centrally aligned image', use_column_width=True, classes='center')
+st.image("./images/Logo-Circular-WEB_OK.png", width=400)
