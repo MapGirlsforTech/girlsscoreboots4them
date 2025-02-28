@@ -72,11 +72,13 @@ parrafo("¿Podrías contestar nuestro cuestionario?")
 # Crear un enlace con apariencia de botón
 st.markdown(
     """
+    <div style="display: flex; justify-content: center;">
     <a href="https://technovationchallenge.org/" target="_blank">
         <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
             Ir al Cuestionario
         </button>
     </a>
+    </div>
     """, 
     unsafe_allow_html=True
 )
