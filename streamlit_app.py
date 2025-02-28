@@ -67,7 +67,7 @@ parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos a
 
 # parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
 
-st.markdown("<h3 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h3>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h4>", unsafe_allow_html=True)
 
 parrafo("¿Podrías contestar nuestro cuestionario?")
 
