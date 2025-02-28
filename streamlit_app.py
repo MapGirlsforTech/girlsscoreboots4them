@@ -37,7 +37,7 @@ parrafo("Un problema que nos ha llamado la atención es que no hay calzado depor
 st.markdown(
     """
     <div style="display: flex; justify-content: center; width: 80%;">
-        <blockquote style="text-align: left; font-style: italic; font-size: 1.2em; border-left: 5px solid #ccc; padding-left: 10px;">
+        <blockquote style="text-align: left; font-style: italic; font-size: 1em; border-left: 5px solid #ccc; padding-left: 10px;">
             "He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas diseñadas especificamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión ha sido la más grave de todas, concretamente en la rodilla y he tenido que estar 4 meses en reposo total."
         </blockquote>
     </div>
