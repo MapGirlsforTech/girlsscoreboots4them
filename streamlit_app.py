@@ -8,18 +8,17 @@ def parrafo(text):
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
-# Define el código CSS para el fondo de color
-
-background_css = """
+# Define el CSS para CENTRAR una imagen con anco del 50%
+center_image_css = """
 <style>
-body {
-    background-color: #f0f2f6;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 </style>
 """
-
-# Inserta el código CSS en la aplicación
-st.markdown(background_css, unsafe_allow_html=True)
 
 # st.header("MAP Girls for Tech")
 
