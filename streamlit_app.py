@@ -87,3 +87,16 @@ parrafo(" ")
 
 parrafo("__Muchas Gracias.__")
 st.image("./images/Logo-Circular-WEB_OK.png", width=400)
+
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center;">
+        <a href="https://www.openai.com" target="_blank">
+            <button style="background-color: #4CAF50; color: white; padding: 14px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+                Ir a OpenAI
+            </button>
+        </a>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
