@@ -57,3 +57,15 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+# Centrar la cita con el texto justificado a la izquierda
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center; width: 80%;">
+        <blockquote style="text-align: left; width: 100%; font-style: italic; font-size: 1.2em; border-left: 5px solid #ccc; padding-left: 10px;">
+            "Esta es una cita donde el texto está justificado a la izquierda, pero la cita está centrada en la página. Esto puede ser útil para presentaciones o resaltar citas de manera visualmente atractiva."
+        </blockquote>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
