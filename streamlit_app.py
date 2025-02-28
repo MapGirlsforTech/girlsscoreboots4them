@@ -1,17 +1,5 @@
 import streamlit as st
 
-# Cambiar el color de fondo de la página con CSS
-st.markdown(
-    """
-    <style>
-        body {
-            background-color: #f0f8ff;  /* Cambia este color por el que desees */
-        }
-    </style>
-    """, 
-    unsafe_allow_html=True
-)
-
 # Función para añadir un párrafo recibiendo un texto como parametro
 def parrafo(text):
     st.markdown(text)
