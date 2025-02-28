@@ -26,8 +26,22 @@ parrafo("Las chicas aprendemos entre otras muchas cosas a programar, entrenar mo
 parrafo("Podéis conocer más sobre este programa a través del siguiente enlace:")
 # technovationchallenge.org
 
-enlace("https://technovationchallenge.org/", "Programa Technovation Girls")
-# st.markdown('[Programa Technovation](https://technovationchallenge.org/)')
+# enlace("https://technovationchallenge.org/", "Programa Technovation Girls")
+# # st.markdown('[Programa Technovation](https://technovationchallenge.org/)')
+
+# Crear un enlace con apariencia de botón
+st.markdown(
+    """
+    <a href="https://technovationchallenge.org/" target="_blank">
+        <button style="background-color: #4CAF50; color: white; padding: 14px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+            Programa Technovation Girls
+        </button>
+    </a>
+    """, 
+    unsafe_allow_html=True
+)
+
+parrafo(" ")
 
 parrafo("Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de zapatos no aptos para el pie puede causar graves lesiones. Este es el caso de nuestra compañera Pilar, así como de otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:")
 
