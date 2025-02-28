@@ -70,6 +70,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+parrafo(" ")
+
 parrafo("Ante esta problemática, la falta de calzado deportivo adecuado al pie de la mujer en muchos deportes femeninos, es hacia donde vamos a enfocar nuestro proyecto esta temporada.")
 
 parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos ayudarán a darle forma  al proyecto y tratar de buscar una solución a este problema. ")
@@ -103,7 +105,7 @@ st.markdown(
 # parrafo("__Muchas Gracias.__")
 
 # Crear una columna para centrar la imagen
-col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el doble de peso
+col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
 # Usar la columna central para colocar la imagen
 with col2:
     st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
