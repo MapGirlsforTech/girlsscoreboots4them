@@ -73,7 +73,7 @@ parrafo("¿Podrías contestar nuestro cuestionario?")
 st.markdown(
     """
     <a href="https://technovationchallenge.org/" target="_blank">
-        <button style="background-color: #4CAF50; color: white; padding: 14px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+        <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
             Ir al Cuestionario
         </button>
     </a>
