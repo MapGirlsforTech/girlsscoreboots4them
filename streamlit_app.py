@@ -63,7 +63,7 @@ st.markdown(
 
 parrafo("Ante esta problemática, la falta de calzado deportivo adecuado al pie de la mujer en muchos deportes femeninos, es hacia donde vamos a enfocar nuestro proyecto esta temporada.")
 
-parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos ayudarán a darle forma  al proyecto y tratar de buscar una solución a este problema: ")
+parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos ayudarán a darle forma  al proyecto y tratar de buscar una solución a este problema. ")
 
 # parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
 
