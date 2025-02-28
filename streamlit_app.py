@@ -53,19 +53,19 @@ parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
 
 parrafo("¿Podrías contestar nuestro cuestionario?")
 
-enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
-
-parrafo("__Muchas Gracias.__")
-st.image("./images/Logo-Circular-WEB_OK.png", width=400)
+# enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 # Crear un enlace con apariencia de botón
 st.markdown(
     """
-    <a href="https://www.openai.com" target="_blank">
+    <a href="https://technovationchallenge.org/" target="_blank">
         <button style="background-color: #4CAF50; color: white; padding: 14px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
-            Ir a OpenAI
+            Ir al Cuestionario
         </button>
     </a>
     """, 
     unsafe_allow_html=True
 )
+
+parrafo("__Muchas Gracias.__")
+st.image("./images/Logo-Circular-WEB_OK.png", width=400)
