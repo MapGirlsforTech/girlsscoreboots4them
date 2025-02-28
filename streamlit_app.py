@@ -8,6 +8,18 @@ def parrafo(text):
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
+# Define el código CSS para el fondo de color
+background_css = """
+<style>
+body {
+    background-color: #f0f2f6;
+}
+</style>
+"""
+
+# Inserta el código CSS en la aplicación
+st.markdown(background_css, unsafe_allow_html=True)   
+
 # st.header("MAP Girls for Tech")
 
 st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
