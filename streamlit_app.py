@@ -33,6 +33,18 @@ parrafo("Un problema que nos ha llamado la atención es que no hay calzado depor
 
 # st.caption("“He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas específicamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión, ha sido la más grave de todas concretamente en la rodilla, he tenido que estar 4 meses en reposo total.”")
 
+# Centrar la cita, pero alineada a la izquierda
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center; width: 80%;">
+        <blockquote style="text-align: left; font-style: italic; font-size: 1.2em; border-left: 5px solid #ccc; padding-left: 10px;">
+            "He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas diseñadas especificamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión ha sido la más grave de todas, concretamente en la rodilla y he tenido que estar 4 meses en reposo total."
+        </blockquote>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 parrafo("Ante esta problemática, la falta de calzado deportivo adecuado al pie de la mujer en muchos deportes femeninos, es hacia donde vamos a enfocar nuestro proyecto esta temporada.")
 
 parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos ayudarán a darle forma  al proyecto y tratar de buscar una solución a este problema: ")
@@ -45,27 +57,3 @@ enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
 st.image("./images/Logo-Circular-WEB_OK.png", width=400)
-
-# Centrar la cita, pero alineada a la izquierda
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center; width: 80%;">
-        <blockquote style="text-align: left; font-style: italic; font-size: 1.2em; border-left: 5px solid #ccc; padding-left: 10px;">
-            "He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas específicamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión, ha sido la más grave de todas concretamente en la rodilla, he tenido que estar 4 meses en reposo total."
-        </blockquote>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# Centrar la cita con el texto justificado a la izquierda
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center; width: 80%;">
-        <blockquote style="text-align: left; width: 100%; font-style: italic; font-size: 1.2em; border-left: 5px solid #ccc; padding-left: 10px;">
-            "Esta es una cita donde el texto está justificado a la izquierda, pero la cita está centrada en la página. Esto puede ser útil para presentaciones o resaltar citas de manera visualmente atractiva."
-        </blockquote>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
