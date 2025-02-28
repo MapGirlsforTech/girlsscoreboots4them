@@ -9,6 +9,7 @@ def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
 # Define el código CSS para el fondo de color
+
 background_css = """
 <style>
 body {
