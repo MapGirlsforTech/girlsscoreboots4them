@@ -19,7 +19,7 @@ body {
 """
 
 # Inserta el código CSS en la aplicación
-st.markdown(background_css, unsafe_allow_html=True)   
+st.markdown(background_css, unsafe_allow_html=True)
 
 # st.header("MAP Girls for Tech")
 
