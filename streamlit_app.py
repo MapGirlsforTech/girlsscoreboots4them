@@ -96,7 +96,7 @@ parrafo(" ")
 # parrafo("__Muchas Gracias.__")
 
 # Crear una columna para centrar la imagen
-col1, col2, col3 = st.columns([1, 2, 1])  # Tres columnas, el centro tiene el doble de peso
+col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el doble de peso
 # Usar la columna central para colocar la imagen
 with col2:
     st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
