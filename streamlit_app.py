@@ -33,7 +33,7 @@ parrafo("Podéis conocer más sobre este programa a través del siguiente enlace
 st.markdown(
     """
     <a href="https://technovationchallenge.org/" target="_blank">
-        <button style="background-color: #4CAF50; color: white; padding: 14px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
             Programa Technovation Girls
         </button>
     </a>
