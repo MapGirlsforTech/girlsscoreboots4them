@@ -69,7 +69,9 @@ parrafo("Hemos desarrollado un cuestionario con una serie de preguntas que nos a
 
 st.markdown("<h4 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h4>", unsafe_allow_html=True)
 
-parrafo("¿Podrías contestar nuestro cuestionario?")
+# parrafo("¿Podrías contestar nuestro cuestionario?")
+
+st.markdown("<h5 style='text-align: center;'>¿Podrías contestar nuestro cuestionario?</h5>", unsafe_allow_html=True)
 
 # enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
@@ -89,5 +91,8 @@ st.markdown(
 
 parrafo(" ")
 
-parrafo("__Muchas Gracias.__")
+# parrafo("__Muchas Gracias.__")
+
+st.markdown("<h5 style='text-align: center;'>Muchas Gracias</h5>", unsafe_allow_html=True)
+
 st.image("./images/Logo-Circular-WEB_OK.png", width=400)
