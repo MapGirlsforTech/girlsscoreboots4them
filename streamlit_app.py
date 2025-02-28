@@ -44,4 +44,4 @@ parrafo("¿Podrías contestar nuestro cuestionario?")
 enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
-st.image("./images/Logo-Circular-WEB_OK.png", width=300)
+st.image("./images/Logo-Circular-WEB_OK.png", width=400)
