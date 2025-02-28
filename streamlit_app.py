@@ -54,7 +54,7 @@ st.markdown(
 
 parrafo(" ")
 
-parrafo("Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de calzado deportivo no adecuado al pie femenino puede causar graves lesiones. Esto le ha pasado a nuestra compañera Pilar, así como de otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:")
+parrafo("Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de calzado deportivo no adecuado al pie femenino puede causar graves lesiones. Esto le ha pasado a nuestra compañera Pilar, así como dea otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:")
 
 # st.caption("“He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas específicamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión, ha sido la más grave de todas concretamente en la rodilla, he tenido que estar 4 meses en reposo total.”")
 
