@@ -91,8 +91,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-parrafo(" ")
-
 # parrafo("__Muchas Gracias.__")
 
 # Crear una columna para centrar la imagen
