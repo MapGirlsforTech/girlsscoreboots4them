@@ -31,7 +31,7 @@ enlace("https://technovationchallenge.org/", "Programa Technovation Girls")
 
 parrafo("Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de zapatos no aptos para el pie puede causar graves lesiones. Este es el caso de nuestra compañera Pilar, así como de otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:")
 
-st.caption("“He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas específicamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión, ha sido la más grave de todas concretamente en la rodilla, he tenido que estar 4 meses en reposo total.”")
+# st.caption("“He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas específicamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión, ha sido la más grave de todas concretamente en la rodilla, he tenido que estar 4 meses en reposo total.”")
 
 parrafo("Ante esta problemática, la falta de calzado deportivo adecuado al pie de la mujer en muchos deportes femeninos, es hacia donde vamos a enfocar nuestro proyecto esta temporada.")
 
@@ -51,7 +51,7 @@ st.markdown(
     """
     <div style="display: flex; justify-content: center; width: 80%;">
         <blockquote style="text-align: left; font-style: italic; font-size: 1.2em; border-left: 5px solid #ccc; padding-left: 10px;">
-            "Esta es una cita que está alineada a la izquierda, pero centrada en la página."
+            "He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas específicamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión, ha sido la más grave de todas concretamente en la rodilla, he tenido que estar 4 meses en reposo total."
         </blockquote>
     </div>
     """,
