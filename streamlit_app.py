@@ -19,6 +19,8 @@ center_image_css = """
 }
 </style>
 """
+# Inserta el CSS para la imagen en la app
+st.markdown(center_image_css, unsafe_allow_html=True)
 
 # st.header("MAP Girls for Tech")
 
@@ -56,4 +58,6 @@ parrafo("¿Podrías contestar nuestro cuestionario?")
 enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 parrafo("__Muchas Gracias.__")
-st.image("./images/Logo-Circular-WEB_OK.png", width=400)
+# st.image("./images/Logo-Circular-WEB_OK.png", width=400)
+
+st.image("./images/Logo-Circular-WEB_OK.png", caption='Centrally aligned image', use_column_width=True, classes='center')
