@@ -15,7 +15,7 @@ def enlace(enlace, titulo):
 st.markdown(
     """
     <h2 style="text-align: center; color: #4CAF50;">
-        MAP Girls for TECH
+        MAP Girls for Tech
     </h2>
     """, 
     unsafe_allow_html=True
