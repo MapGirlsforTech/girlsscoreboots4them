@@ -2,3 +2,6 @@ streamlit
 tensorflow
 pillow
 h5py
+numpy
+pandas
+plotly
