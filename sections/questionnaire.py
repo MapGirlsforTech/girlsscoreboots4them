@@ -53,7 +53,7 @@ st.plotly_chart(
     )
 )
 
-st.header("Existe calzado femenino para el deporte que practicas?")
+st.header("¿Existe calzado femenino para el deporte que practicas?")
 
 st.plotly_chart(
     px.pie(
@@ -62,7 +62,7 @@ st.plotly_chart(
     )
 )
 
-st.header("Tu calzado te resulta comodo?")
+st.header("¿Tu calzado te resulta comodo?")
 
 st.plotly_chart(
     px.pie(
