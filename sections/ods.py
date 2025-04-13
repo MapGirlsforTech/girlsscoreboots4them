@@ -24,7 +24,7 @@ parrafo("Nuestra App aplica con los siguientes ODS:")
 
 #Imagen 4 ODS
 
-# Tres columnas, el centro tiene el triple de peso
+# Dos columnas
 col1, col2 = st.columns([1, 1])
 # Usar la columna central para colocar la imagen
 with col1:
