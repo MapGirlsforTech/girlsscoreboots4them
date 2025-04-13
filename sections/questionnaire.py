@@ -29,8 +29,8 @@ df.rename(columns={
     'Marca Temporal': 'Fecha', 
     '01.  ¿Conocías que no existen botas / zapatillas diseñadas específicamente para el pie femenino en el fútbol y otros deportes?\n': "Conocimiento de existencia de botas para pie femenino",
     '02.  Indica cual es principal deporte que practicas:': "Deporte principal",
-    ' 04. ¿Existen zapatillas / botas adaptadas al pie femenino para el deporte que practicas?': "Existe calzado femenino para el deporte que practicas?",
-    '05.  ¿Las zapatillas / botas que utilizas en tu deporte te resultan cómodas?': "Tu calzado te resulta comodo?"
+    ' 04. ¿Existen zapatillas / botas adaptadas al pie femenino para el deporte que practicas?': "¿Existe calzado femenino para el deporte que practicas?",
+    '05.  ¿Las zapatillas / botas que utilizas en tu deporte te resultan cómodas?': "¿Tu calzado te resulta comodo?"
     }, inplace=True)
 
 # Descomentar para ver la tabla
@@ -66,7 +66,7 @@ st.header("¿Tu calzado te resulta comodo?")
 
 st.plotly_chart(
     px.pie(
-        names=list(df["Tu calzado te resulta comodo?"].value_counts().index), 
-        values=list(df["Tu calzado te resulta comodo?"].value_counts().values)
+        names=list(df["¿Tu calzado te resulta comodo?"].value_counts().index), 
+        values=list(df["¿Tu calzado te resulta comodo?"].value_counts().values)
     )
 )
