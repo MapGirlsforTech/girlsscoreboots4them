@@ -7,4 +7,4 @@ def parrafo(text):
 
 st.header(translate("ods"))
 
-parrafo ("17 objetivos para transformar nuestro mundo")
+parrafo("17 objetivos para transformar nuestro mundo")
