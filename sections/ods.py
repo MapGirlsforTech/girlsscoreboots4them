@@ -22,15 +22,8 @@ with col2:
 
 parrafo("Nuestra App aplica con los siguientes ODS:")
 
-# Crear una columna para centrar la imagen
-# Tres columnas, el centro tiene el triple de peso
-col1, col2, col3 = st.columns([2, 1, 2])
-# Usar la columna central para colocar la imagen
-with col1:
-    st.image("./images/ODS-03.png", use_container_width=True)
-with col3:
-    st.image("./images/ODS-05.png", use_container_width=True)
 #Imagen 4 ODS
+
 
 parrafo("ODS número 3: Salud y Bienestar")
 parrafo("Nuestro proyecto toca el tema del deporte, tratando de concienciar a los usuarios sobre unos de los problemas que están cobrando mayor importancia en este ámbito. Por tanto, nuestra web App pretende mejorar la experiencia al practicar deporte y por tanto, el bienestar y la salud de las mujeres deportistas")
