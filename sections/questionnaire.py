@@ -57,8 +57,8 @@ st.header("¿Existe calzado femenino para el deporte que practicas?")
 
 st.plotly_chart(
     px.pie(
-        names=list(df["Existe calzado femenino para el deporte que practicas?"].value_counts().index), 
-        values=list(df["Existe calzado femenino para el deporte que practicas?"].value_counts().values)
+        names=list(df["¿Existe calzado femenino para el deporte que practicas?"].value_counts().index), 
+        values=list(df["¿Existe calzado femenino para el deporte que practicas?"].value_counts().values)
     )
 )
 
