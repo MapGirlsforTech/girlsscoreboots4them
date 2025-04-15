@@ -13,12 +13,7 @@ parrafo("La Agenda cuenta con 17 Objetivos de Desarrollo Sostenible, que estable
 
 #Imagen todas las ODS
 
-# Crear una columna para centrar la imagen
-# Tres columnas, el centro tiene el triple de peso
-col1 = st.columns([1])
-# Usar la columna central para colocar la imagen
-with col1:
-    st.image("./images/Poster ODS_Spanish.png", use_container_width=True)
+st.image("./images/Poster ODS_Spanish.png")
 
 parrafo("Nuestra App aplica con los siguientes ODS:")
 
