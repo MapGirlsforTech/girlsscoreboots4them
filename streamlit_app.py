@@ -48,7 +48,7 @@ footprint = st.Page(f'sections/footprint.py',
 
 # # Secciones del foro
 rules = st.Page(
-    'sections/forum/rules.py', title=translate("rules")
+    'sections/forum/rules.py', title=translate("rules.title")
 )
 clothing_complements = st.Page(
     'sections/forum/clothing_complements.py', title=translate("clothing_complements")

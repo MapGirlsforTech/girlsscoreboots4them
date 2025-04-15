@@ -5,16 +5,21 @@ from translations import translations
 
 title(translate("ods.title"))
 
-subtitle(translate("ods.objectives_to_change_the_world.title"))
+st.markdown(
+    f"<h4 style='text-align: center;'>{translate("ods.objectives_to_change_the_world.title")}</h3>",
+    unsafe_allow_html=True
+)
+
+parrafo("")
 parrafo(translate("ods.objectives_to_change_the_world.first_text"))
 parrafo(translate("ods.objectives_to_change_the_world.second_text"))
-
+parrafo("")
 #Imagen todas las ODS
 
 st.image("./images/Poster ODS_Spanish.png")
-
+parrafo("")
 subtitle(translate("ods.how_we_apply.title"))
-
+parrafo("")
 #Imagen 4 ODS
 
 # Crear una columna para centrar la imagen
