@@ -1,5 +1,4 @@
 import streamlit as st
-from translations import translations
 
 # Función para añadir un párrafo recibiendo un texto como parametro
 def parrafo(text):
@@ -24,4 +23,20 @@ def buttonLink(label, link):
         unsafe_allow_html=True
     )
 
-t = translations[st.session_state.language]
+def title(text):
+    st.markdown(f"""
+    <h2 style="text-align: center; color: #4CAF50;">
+        {text}
+    </h2>
+    """,
+        unsafe_allow_html=True
+    )
+
+def subtitle(text):
+        st.markdown(f"""
+    <h4 style="text-align: center; color: #4CAF50;">
+        {text}
+    </h4>
+    """,
+        unsafe_allow_html=True
+    )

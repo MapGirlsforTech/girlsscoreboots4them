@@ -9,7 +9,34 @@ translations = {
         "introduce_yourself": "Introduce Yourself",
         "documentation": "Documentation",
         "questionnaire": "Questionnaire",
-        "ods": "SDG",
+        "ods": {
+        "title": "SDGs",
+        "objectives_to_change_the_world": {
+            "title": "17 goals to transform our world",
+            "first_text": "In 2015, the UN approved the 2030 Agenda for Sustainable Development, an opportunity for countries and societies to embark on a new path to improve the lives of all people, leaving no one behind.",
+            "second_text": "The Agenda includes 17 Sustainable Development Goals, which establish that poverty eradication must go hand in hand with strategies that foster economic growth and address a range of social needs such as education, healthcare, social protection, and employment opportunities, while also combating climate change and protecting the environment."
+        },
+        "how_we_apply": {
+            "title": "Our App aligns with the following SDGs:",
+            "third_ods": {
+                "title": "SDG number 3: Good Health and Well-being",
+                "text": "Our project addresses the issue of sports, aiming to raise awareness among users about one of the growing concerns in this field. Therefore, our web app seeks to enhance the experience of practicing sports and consequently improve the well-being and health of female athletes."
+            },
+            "fifth_ods": {
+                "title": "SDG number 5: Gender Equality",
+                "text": "Nowadays, it is much easier to find footwear adapted to the male foot than to the female foot. This directly affects female athletes' performance as they suffer injuries more easily, and in some cases, these injuries are severe."
+            },
+            "nineth_ods": {
+                "title": "SDG number 9: Industry, Innovation, and Infrastructure",
+                "text": "The development of this project is entirely innovative. After conducting an exhaustive study, we found no suitable sports footwear for women across many sports. Making the industry aware of this issue will drive innovation in the women's sports footwear sector."
+            },
+            "tenth_ods": {
+                "title": "SDG number 10: Reduced Inequalities",
+                "text": "Our project aligns with this SDG because, just as there is sports footwear for men in all the necessary modalities, there should also be equivalent sports footwear for women. The lack of proper footwear contributes to the undervaluation of female athletes."
+            }
+        }
+    },
+
         "footprint": "Footprint",
         "footwear": "Footwear",
         "foro": {
@@ -52,7 +79,34 @@ translations = {
         "introduce_yourself": "Presentate",
         "documentation": "Documentación",
         "questionnaire": "Cuestionario",
-        "ods": "ODS",
+        "ods": {
+            "title": "ODS",
+            "objectives_to_change_the_world":{
+                "title": "17 objetivos para transformar nuestro mundo",
+                "first_text": "En 2015, la ONU aprobó la Agenda 2030 sobre el Desarrollo Sostenible, una oportunidad para que los países y sus sociedades emprendieran un nuevo camino con el que mejorar la vida de todas las personas, sin dejar a nadie atrás.",
+                "second_text": "La Agenda cuenta con 17 Objetivos de Desarrollo Sostenible, que establecen que la erradicación de la pobreza debe ir de la mano de estrategias que fomenten el crecimiento económico y abordan una serie de necesidades sociales como la educación, la sanidad, la protección social y las perspectivas de empleo, al tiempo que se combate el cambio climático y se protege el medio ambiente."
+
+            },
+            "how_we_apply":{
+                "title": "Nuestra App aplica con los siguientes ODS:",
+                "third_ods": {
+                    "title": "ODS número 3: Salud y bienestar",
+                    "text": "Nuestro proyecto toca el tema del deporte, tratando de concienciar a los usuarios sobre unos de los problemas que están cobrando mayor importancia en este ámbito. Por tanto, nuestra web App pretende mejorar la experiencia al practicar deporte y por tanto, el bienestar y la salud de las mujeres deportistas"
+                },
+                "fifth_ods": {
+                    "title": "ODS número 5: Igualdad de género",
+                    "text": "A día de hoy, es mucho más fácil encontrar un calzado adaptado al pie masculino que al femenino. Esto afecta directamente al rendimiento de las deportistas femeninas porque se lesionan con más facilidad y siendo graves  en algunas ocasiones estas lesiones."
+                },
+                "nineth_ods": {
+                    "title": "SDG number 9: Industria, innovación e infraestructura",
+                    "text": "El desarrollo de este proyecto es completamente innovador. Después de realizar un exhaustivo estudio, no hemos encontrado calzado deportivo femenino para un gran número de deportes. Hacer ver a la industria este problema supondrá una innovación en la industria deportiva femenina."
+                },
+                "tenth_ods": {
+                    "title": "SDG number 10: Reducción de las desigualdades",
+                    "text": "Nuestro proyecto cumple este ODS porque igual que hay calzado deportivo para hombres en todas las modalidades que lo requieren, también tendría que haber calzado deportivo femenino en las mismas condiciones. Esto hace que las mujeres estén infravaloradas."
+                }
+            }
+        },
         "footprint": "Pisada",
         "foro": {
             "title": "Foro",

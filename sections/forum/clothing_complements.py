@@ -1,4 +1,5 @@
 import streamlit as st
 from streamlit_app import translate
+from utils import title
 
-st.header(translate("clothing_complements"))
+title(translate("clothing_complements"))

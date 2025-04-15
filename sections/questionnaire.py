@@ -1,21 +1,21 @@
 import streamlit as st
 from streamlit_app import translate
-from utils import parrafo, buttonLink, t
+from utils import parrafo, buttonLink
 import pandas as pd
 import plotly.express as px
 data = pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vRpR6XlR7T_AdqCxVp83HRw85zMzFhrs18ehRsswsPHETFtB4wBljHB-Fdrc9RBDuv4hKrPU6U_Lt8F/pub?gid=160785226&single=true&output=csv')
 
 st.header(translate("questionnaire"))
 
-parrafo(t["home"]["questionnaire"])
+parrafo(translate("home.questionnaire"))
 
-parrafo(f"<h4 style='text-align: center;'>{t['home']['needYourHelp']}</h4>")
+parrafo(f"<h4 style='text-align: center;'>{translate('home.needYourHelp')}</h4>")
 
-parrafo(f"<h5 style='text-align: center;'>{t['home']['questionnaireRequest']}</h5>")
+parrafo(f"<h5 style='text-align: center;'>{translate('home.questionnaireRequest')}</h5>")
 
-parrafo(f"<h5 style='text-align: center;'>{t['home']['thankYou']}</h5>")
+parrafo(f"<h5 style='text-align: center;'>{translate('home.thankYou')}</h5>")
 
-buttonLink(t["home"]["questionnaireLink"], "https://technovationchallenge.org/")
+buttonLink(translate("home.questionnaireLink"), "https://technovationchallenge.org/")
 
 # Crear una columna para centrar la imagen
 col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
