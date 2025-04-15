@@ -8,11 +8,10 @@ def parrafo(text):
 st.header(translate("ods"))
 
 st.markdown(
-    "<h3 style='text-align: center;'>17 objetivos para transformar nuestro mundo</h3>",
+    "<h4 style='text-align: center;'>17 objetivos para transformar nuestro mundo</h3>",
     unsafe_allow_html=True
 )
 
-#st.markdown("**17 objetivos para transformar nuestro mundo**")
 parrafo("")
 parrafo("En 2015, la ONU aprobó la Agenda 2030 sobre el Desarrollo Sostenible, una oportunidad para que los países y sus sociedades emprendieran un nuevo camino con el que mejorar la vida de todas las personas, sin dejar a nadie atrás.")
 parrafo("La Agenda cuenta con 17 Objetivos de Desarrollo Sostenible, que establecen que la erradicación de la pobreza debe ir de la mano de estrategias que fomenten el crecimiento económico y abordan una serie de necesidades sociales como la educación, la sanidad, la protección social y las perspectivas de empleo, al tiempo que se combate el cambio climático y se protege el medio ambiente.")
@@ -32,6 +31,7 @@ col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
     st.image("./images/ODS_Proyecto.png", use_container_width=True)
 
+parrafo("")
 parrafo("**ODS número 3: Salud y Bienestar**")
 parrafo("")
 parrafo("Nuestro proyecto toca el tema del deporte, tratando de concienciar a los usuarios sobre unos de los problemas que están cobrando mayor importancia en este ámbito. Por tanto, nuestra web App pretende mejorar la experiencia al practicar deporte y por tanto, el bienestar y la salud de las mujeres deportistas")
