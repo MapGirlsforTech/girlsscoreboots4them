@@ -6,7 +6,7 @@ from translations import translations
 title(translate("ods.title"))
 
 st.markdown(
-    f"<h4 style='text-align: center;'>{translate("ods.objectives_to_change_the_world.title")}</h3>",
+    f"<h4 style='text-align: center;'>{translate("ods.objectives_to_change_the_world.title")}</h4>",
     unsafe_allow_html=True
 )
 
