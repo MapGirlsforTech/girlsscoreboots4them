@@ -118,11 +118,11 @@ translations = {
                     "text": "A día de hoy, es mucho más fácil encontrar un calzado adaptado al pie masculino que al femenino. Esto afecta directamente al rendimiento de las deportistas femeninas porque se lesionan con más facilidad y siendo graves  en algunas ocasiones estas lesiones."
                 },
                 "nineth_ods": {
-                    "title": "SDG number 9: Industria, innovación e infraestructura",
+                    "title": "ODSNúmero 9: Industria, innovación e infraestructura",
                     "text": "El desarrollo de este proyecto es completamente innovador. Después de realizar un exhaustivo estudio, no hemos encontrado calzado deportivo femenino para un gran número de deportes. Hacer ver a la industria este problema supondrá una innovación en la industria deportiva femenina."
                 },
                 "tenth_ods": {
-                    "title": "SDG number 10: Reducción de las desigualdades",
+                    "title": "ODS número 10: Reducción de las desigualdades",
                     "text": "Nuestro proyecto cumple este ODS porque igual que hay calzado deportivo para hombres en todas las modalidades que lo requieren, también tendría que haber calzado deportivo femenino en las mismas condiciones. Esto hace que las mujeres estén infravaloradas."
                 }
             }
