@@ -59,3 +59,4 @@ def comment_with_avatar(user, text, date, avatar_url):
         </div>
         """, unsafe_allow_html=True
     )
+    

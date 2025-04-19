@@ -12,3 +12,8 @@ parrafo("4. **Revolución en los años 70 y 80**: Con el crecimiento del fitness
 parrafo("5. **Impacto cultural y social**: La lucha por un calzado deportivo adecuado para mujeres no es solo una cuestión de moda, sino de equidad en el deporte. La falta de opciones refleja una brecha de género en la industria deportiva que aún necesita ser abordada.")
 parrafo("6. **Desafíos actuales**: A pesar de los avances, muchas disciplinas deportivas aún carecen de opciones de calzado diseñadas específicamente para la anatomía femenina. Esto afecta el rendimiento y la comodidad de las atletas.")
 parrafo("7. **Empoderamiento y representación**: En las últimas décadas, el calzado deportivo femenino ha sido un símbolo de empoderamiento. Las atletas han exigido mayor representación y opciones diseñadas para su rendimiento, impulsando cambios en la industria.")
+
+col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
+# Usar la columna central para colocar la imagen
+with col2:
+    st.image("./images/LOGO_Boots_For_Her_Girls_Score_WEB_500x500.png", use_container_width=True)
