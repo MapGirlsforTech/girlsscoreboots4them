@@ -16,4 +16,4 @@ parrafo("7. **Empoderamiento y representación**: En las últimas décadas, el c
 col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
 # Usar la columna central para colocar la imagen
 with col2:
-    st.image("./images/LOGO_Boots_For_Her_Girls_Score_WEB_500x500.png", use_container_width=True)
+    st.image("./images/LOGO_Boots_For_Her_Girls_Score_WEB_400x400.png", use_container_width=True)
