@@ -14,6 +14,7 @@ translations = {
             "eighth_rule": "8. **Motivation and Resources:** Share ideas, tips, and resources so everyone can improve and enjoy their sports practice."
         },
         "clothing_complements": "Clothing and Accessories",
+        "merchandising": "Merchandising",
         "experiencies": "Experiences",
         "footwear_shop": "Footwear Shops",
         "introduce_yourself": "Introduce Yourself",
@@ -94,6 +95,7 @@ translations = {
             "eighth_rule": "8. **Motivación y recursos:** Comparte ideas, consejos y recursos para que todas puedan mejorar y disfrutar de su práctica deportiva.",
         },
         "clothing_complements": "Ropa deportiva y Complementos",
+        "merchandasing": "Merchandasing",
         "experiencies": "Experiencias",
         "footwear_shop": "Tiendas de calzado",
         "introduce_yourself": "Presentate",
