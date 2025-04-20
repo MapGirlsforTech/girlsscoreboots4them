@@ -62,14 +62,16 @@ footwear_shop = st.Page(
 introduce_yourself = st.Page(
     'sections/forum/introduce_yourself.py', title=translate("introduce_yourself")
 )
-
-# # Funciona como router, desde aca se renderizan las paginas
+introduce_yourself = st.Page(
+    'sections/forum/merchandising.py', title=translate("merchandising")
+)
+# # Funciona como router, desde aqui se renderizan las paginas
 
 # # Con esto configuro a mano las paginas pudiendo customizar el titulo e icono
 pg = st.navigation(
     {
         "": [home,documentation, questionnaire, ods, footprint],
-        translate("foro.title"): [rules,introduce_yourself,experiencies,footwear_shop,clothing_complements]
+        translate("foro.title"): [rules,introduce_yourself,experiencies,footwear_shop,clothing_complements,merchandising]
     }
 )
 if pg is not None:
