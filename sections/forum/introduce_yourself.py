@@ -6,7 +6,7 @@ title(translate("introduce_yourself"))
 
 st.header(translate("introduce_yourself"))
 
-subtitle("Bienvenida al Foro: Boots for her, Girls Score!!!")
+subtitle("Bienvenida al Foro: Boots for Her, Girls Score!!!")
 parrafo("¡Qué alegría tenerte aquí! ")
 parrafo("Este espacio ha sido creado **por mujeres y para mujeres** que comparten una pasión: **el deporte** en todas sus formas.")
 parrafo("Ya seas atleta profesional, amateur, entrenadora, estudiante o simplemente una amante del deporte en todas sus disciplinas, aquí encontrarás una comunidad que te apoya, te inspira y te entiende.")
