@@ -37,3 +37,10 @@ subtitle(translate("ods.how_we_apply.nineth_ods.title"))
 parrafo(translate("ods.how_we_apply.nineth_ods.text"))
 subtitle(translate("ods.how_we_apply.tenth_ods.title"))
 parrafo(translate("ods.how_we_apply.tenth_ods.text"))
+parrafo("")
+parrafo("")
+# Crear una columna para centrar la imagen
+col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
+# Usar la columna central para colocar la imagen
+with col2:
+    st.image("./images/LOGO_Boots_1500x1500.png", use_container_width=True)
