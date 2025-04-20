@@ -13,7 +13,6 @@ translations = {
             "seventh_rule": "7. **Safe Space:** Personal attacks, offensive comments, and any form of harassment are prohibited to foster an environment where everyone feels comfortable participating.",
             "eighth_rule": "8. **Motivation and Resources:** Share ideas, tips, and resources so everyone can improve and enjoy their sports practice."
         },
-        "merchandising": "Merchandising",
         "clothing_complements": "Clothing and Accessories",
         "experiencies": "Experiences",
         "footwear_shop": "Footwear Shops",
@@ -94,7 +93,6 @@ translations = {
             "seventh_rule": "7. **Espacio seguro:** Se prohíben los ataques personales, los comentarios ofensivos y cualquier tipo de acoso, fomentando un ambiente donde todas se sientan cómodas participando.",
             "eighth_rule": "8. **Motivación y recursos:** Comparte ideas, consejos y recursos para que todas puedan mejorar y disfrutar de su práctica deportiva.",
         },
-        "merchandising: "Merchandising",
         "clothing_complements": "Ropa deportiva y Complementos",
         "experiencies": "Experiencias",
         "footwear_shop": "Tiendas de calzado",
