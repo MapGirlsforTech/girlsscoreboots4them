@@ -62,9 +62,10 @@ footwear_shop = st.Page(
 introduce_yourself = st.Page(
     'sections/forum/introduce_yourself.py', title=translate("introduce_yourself")
 )
-introduce_yourself = st.Page(
+merchandising = st.Page(
     'sections/forum/merchandising.py', title=translate("merchandising")
 )
+
 # # Funciona como router, desde aqui se renderizan las paginas
 
 # # Con esto configuro a mano las paginas pudiendo customizar el titulo e icono
