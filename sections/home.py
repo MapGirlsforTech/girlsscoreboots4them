@@ -7,7 +7,6 @@ title(translate("home.title"))
 
 parrafo(translate("home.presentation"))
 
-
 buttonLink(translate("home.linkToProgram"), "https://technovationchallenge.org/")
 
 parrafo(translate("home.introductionToTestimony"))

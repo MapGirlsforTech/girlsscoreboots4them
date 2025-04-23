@@ -1,3 +1,5 @@
+import streamlit as st
+
 translations = {
     "en": {
         "home_tab": "Home",  
@@ -17,17 +19,30 @@ translations = {
         "merchandising": "Merchandising",
         "experiencies": "Experiences",
         "footwear_shop": "Footwear Shops",
-        "introduce_yourself": "Introduce Yourself",
-        "documentation": "Documentation",
+        "introduce_yourself": {
+            "title": "Introduce Yourself",
+            "subtitle": "Welcome to forum: Boots for Her, Girls Score!!!",
+        },
+        "documentation": {
+            "title": "Documentation",
+            "subtitle": "**Key facts about the evolution of women's sports footwear:**",
+            "bullet_1": "1. **Origins and early models:** Although sports footwear began to develop in the 19th century, the first models were designed exclusively for men. Women had to adapt men's shoes or wear models that were poorly suited to their needs.",
+            "bullet_2": "2. **First sports shoes for women:** It was not until the 1920s and 1930s that sneakers specifically for women started being manufactured. However, the offerings remained limited, and many sports disciplines lacked suitable options.",
+            "bullet_3": "3. **Technological innovations and expansion:** Beginning in the 1960s, brands like Adidas and Nike started developing more specialized models for women. Improvements were made in cushioning, support, and lighter materials.",
+            "bullet_4": "4. **Revolution in the 1970s and 1980s:** With the growth of fitness and running among women, sports brands began developing models with technology adapted to female anatomy. The perception of women's sports footwear shifted from being a secondary product to a real necessity.",
+            "bullet_5": "5. **Cultural and social impact:** The fight for adequate sports footwear for women is not just a fashion issue but one of equity in sports. The lack of options reflects a gender gap in the sports industry that still needs to be addressed.",
+            "bullet_6": "6. **Current challenges:** Despite advancements, many sports disciplines still lack footwear options designed specifically for female anatomy. This affects athletes' performance and comfort.",
+            "bullet_7": "7. **Empowerment and representation:** In recent decades, women's sports footwear has become a symbol of empowerment. Female athletes have demanded greater representation and options designed for their performance, driving changes in the industry.",
+        },
         "questionnaire": "Questionnaire",
         "ods": {
-        "title": "SDGs",
-        "objectives_to_change_the_world": {
-            "title": "17 goals to transform our world",
-            "first_text": "In 2015, the UN approved the 2030 Agenda for Sustainable Development, an opportunity for countries and societies to embark on a new path to improve the lives of all people, leaving no one behind.",
-            "second_text": "The Agenda includes 17 Sustainable Development Goals, which establish that poverty eradication must go hand in hand with strategies that foster economic growth and address a range of social needs such as education, healthcare, social protection, and employment opportunities, while also combating climate change and protecting the environment."
-        },
-        "how_we_apply": {
+            "title": "SDGs",
+            "objectives_to_change_the_world": {
+                "title": "17 goals to transform our world",
+                "first_text": "In 2015, the UN approved the 2030 Agenda for Sustainable Development, an opportunity for countries and societies to embark on a new path to improve the lives of all people, leaving no one behind.",
+                "second_text": "The Agenda includes 17 Sustainable Development Goals, which establish that poverty eradication must go hand in hand with strategies that foster economic growth and address a range of social needs such as education, healthcare, social protection, and employment opportunities, while also combating climate change and protecting the environment."
+            },
+            "how_we_apply": {
             "title": "Our App aligns with the following SDGs:",
             "third_ods": {
                 "title": "SDG number 3: Good Health and Well-being",
@@ -46,8 +61,7 @@ translations = {
                 "text": "Our project aligns with this SDG because, just as there is sports footwear for men in all the necessary modalities, there should also be equivalent sports footwear for women. The lack of proper footwear contributes to the undervaluation of female athletes."
             }
         }
-    },
-
+        },
         "footprint": "Footprint",
         "footwear": "Footwear",
         "foro": {
@@ -95,11 +109,24 @@ translations = {
             "eighth_rule": "8. **Motivación y recursos:** Comparte ideas, consejos y recursos para que todas puedan mejorar y disfrutar de su práctica deportiva.",
         },
         "clothing_complements": "Ropa deportiva y Complementos",
-        "merchandasing": "Merchandasing",
+        "merchandising": "Merchandising",
         "experiencies": "Experiencias",
         "footwear_shop": "Tiendas de calzado",
-        "introduce_yourself": "Presentate",
-        "documentation": "Documentación",
+        "introduce_yourself": {
+            "title": "Presentate",
+            "subtitle": "Bienvenida al Foro: Boots for Her, Girls Score!!!",
+        },
+        "documentation": {
+            "title": "Documentación",
+            "subtitle":"**Datos clave sobre la evolución del calzado deportivo femenino:**",
+            "bullet_1": "1. **Orígenes y primeros modelos**: Aunque el calzado deportivo comenzó a desarrollarse en el siglo XIX, los primeros modelos estaban diseñados exclusivamente para hombres. Las mujeres tenían que adaptar calzado masculino o usar modelos poco adecuados para sus necesidades.",
+            "bullet_2": "2. **Primeras zapatillas deportivas para mujeres**: No fue hasta las décadas de 1920 y 1930 que comenzaron a fabricarse zapatillas deportivas específicamente para mujeres. Sin embargo, la oferta seguía siendo limitada y muchas disciplinas deportivas no contaban con opciones adecuadas.",
+            "bullet_3": "3. **Innovaciones tecnológicas y expansión**: A partir de los años 60, marcas como Adidas y Nike empezaron a desarrollar modelos más especializados para mujeres. Se introdujeron mejoras en amortiguación, soporte y materiales más ligeros.",
+            "bullet_4": "4. **Revolución en los años 70 y 80**: Con el crecimiento del fitness y el running entre las mujeres, las marcas deportivas empezaron a desarrollar modelos con tecnología adaptada a la anatomía femenina. La percepción del calzado deportivo femenino pasó de ser un producto secundario a una necesidad real.",   
+            "bullet_5": "5. **Impacto cultural y social**: La lucha por un calzado deportivo adecuado para mujeres no es solo una cuestión de moda, sino de equidad en el deporte. La falta de opciones refleja una brecha de género en la industria deportiva que aún necesita ser abordada.",
+            "bullet_6": "6. **Desafíos actuales**: A pesar de los avances, muchas disciplinas deportivas aún carecen de opciones de calzado diseñadas específicamente para la anatomía femenina. Esto afecta el rendimiento y la comodidad de las atletas.",
+            "bullet_7": "7. **Empoderamiento y representación**: En las últimas décadas, el calzado deportivo femenino ha sido un símbolo de empoderamiento. Las atletas han exigido mayor representación y opciones diseñadas para su rendimiento, impulsando cambios en la industria.",
+        },
         "questionnaire": "Cuestionario",
         "ods": {
             "title": "ODS",
@@ -160,3 +187,15 @@ translations = {
         }
 }
 }
+
+def translate(key):
+    # """Obtiene la traducción desde la estructura anidada."""
+    keys = key.split(".")
+    translation = translations.get(st.session_state.language, {})
+
+    for k in keys:
+        translation = translation.get(k, None)
+        if translation is None:
+            return f"Translation for '{key}' not found"
+
+    return translation

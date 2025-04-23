@@ -1,5 +1,4 @@
 import streamlit as st
-
 primaryColor = "#4CAF50"  # Color verde
 
 # Función para añadir un párrafo recibiendo un texto como parametro
@@ -46,7 +45,7 @@ def subtitle(text):
 def comment_with_avatar(user, text, date, avatar_url):
     st.markdown(
         f"""
-        <div style="display: flex; align-items: center; gap: 10px; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);background: rgb(38, 39, 48)">
+        <div style="display: flex; align-items: center; gap: 10px; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);background: rgb(38, 39, 48); margin: 10px 0;">
             <img src="{avatar_url}" width="40px" height="40px" style="border-radius: 50%;" />
             <div style="display: flex; flex-direction: column;">
                 <div style="display: flex; align-items: center; gap: 5px;">
@@ -59,4 +58,3 @@ def comment_with_avatar(user, text, date, avatar_url):
         </div>
         """, unsafe_allow_html=True
     )
-    
