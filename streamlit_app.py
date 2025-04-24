@@ -7,14 +7,17 @@ languages_options = {"en": "English", "es": "Español"}
 def format_func(option):
     return languages_options[option]
 
-def set_language(lang):
-    st.session_state["language"] = lang
-
 # # Inicializar estado global si no existe
-if "language" not in st.session_state:
-    set_language("es")  # Idioma por defecto
+# if "language" not in st.session_state:
+#     st.session_state["language"] = "es"  # Idioma por defecto
 # Genera el selector de idiomas
-st.sidebar.selectbox("language selector",list(languages_options.keys()),index=list(languages_options.keys()).index(st.session_state.language), label_visibility="collapsed",format_func=format_func,on_change=set_language)   
+st.session_state["language"] = st.sidebar.selectbox(
+    "language selector",
+    list(languages_options.keys()),
+    index=list(languages_options.keys()).index(st.session_state.language), 
+    label_visibility="collapsed",
+    format_func=format_func
+    )   
 
 pagePath = "sections"
 
@@ -23,9 +26,10 @@ navigation = st.navigation(
         "": [
             st.Page(f'{pagePath}/home.py', title=translate("home_tab"), default=True),
             st.Page(f'{pagePath}/documentation.py', title=translate("documentation.title")), 
+            st.Page(f'{pagePath}/footprint_types.py', title=translate("footprint_types.title")),
+            st.Page(f'{pagePath}/footprint.py', title=translate("footprint")),
             st.Page(f'{pagePath}/questionnaire.py', title=translate("questionnaire")), 
             st.Page(f'{pagePath}/ods.py', title=translate("ods.title")), 
-            st.Page(f'{pagePath}/footprint.py', title=translate("footprint"))
         ],
         translate("foro.title"): [
             st.Page(f'{pagePath}/forum/rules.py', title=translate("rules.title")),

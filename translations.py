@@ -22,9 +22,21 @@ translations = {
         "introduce_yourself": {
             "title": "Introduce Yourself",
             "subtitle": "Welcome to forum: Boots for Her, Girls Score!!!",
+            "welcome_message": """
+                What a joy to have you here!\n\n
+                This space has been created by women and for women who share a passion: sports in all its forms.\n\n
+                Whether you are a professional athlete, amateur, coach, student, or simply a sports enthusiast in all its disciplines, here you will find a community that supports you, inspires you, and understands you.\n\n
+                Sports have no gender, but the industry does not consider all our needs. We deserve sports footwear options designed for us and our anatomy, with the same technology, innovation, and variety offered to our male counterparts.\n\n
+                Share your experiences.\n\n
+                Exchange advice and training tips.\n\n
+                Talk about nutrition, health, and wellness.\n\n
+                Connect with other women like you.\n\n
+                Here we celebrate your achievements, learn from challenges, and grow together.\n\n
+                Thank you for being part of this powerful and authentic community!\n\n
+                Welcome, this is your space!"""
         },
         "documentation": {
-            "title": "Documentation",
+            "title": "Past and Future",
             "subtitle": "**Key facts about the evolution of women's sports footwear:**",
             "bullet_1": "1. **Origins and early models:** Although sports footwear began to develop in the 19th century, the first models were designed exclusively for men. Women had to adapt men's shoes or wear models that were poorly suited to their needs.",
             "bullet_2": "2. **First sports shoes for women:** It was not until the 1920s and 1930s that sneakers specifically for women started being manufactured. However, the offerings remained limited, and many sports disciplines lacked suitable options.",
@@ -62,7 +74,7 @@ translations = {
             }
         }
         },
-        "footprint": "Footprint",
+        "footprint": "Footprint Test",
         "footwear": "Footwear",
         "foro": {
             "title": "Forum",
@@ -70,7 +82,7 @@ translations = {
             "comments": "Comments",
         },
         "home": {
-            "title": "MAP Girls for TECH",
+            "title": "Boots for Her. Girls Score!!!",
             "presentation": """
             Hello, we are **Maite**, **Ana**, and **Pilar**, and together we form the team MAP Girls for Tech. We are participating for the third consecutive year in the Technovation Girls project, whose goal is to bring technology closer to girls and young women aged 8 to 18. The idea is to increase the presence of women in STEM careers through this initiative.
             
@@ -91,6 +103,9 @@ translations = {
             "needYourHelp": "WE NEED YOUR HELP!!!!!",
             "thankYou": "Thank you very much",
             "questionnaireRequest": "Could you answer our questionnaire?",
+        },
+        "footprint_types":{
+            "title": "Footprint Types",
         }
 },
     "es": {
@@ -112,8 +127,34 @@ translations = {
         "merchandising": "Merchandising",
         "experiencies": "Experiencias",
         "footwear_shop": "Tiendas de calzado",
-        "introduce_yourself": "Preséntate",
-        "documentation": "Documentación",
+        "introduce_yourself": {
+            "title": "Presentate",
+            "subtitle": "Bienvenida al foro: Boots for Her, Girls Score!!!",
+            "welcome_message": """
+                ¡Qué alegría tenerte aquí!\n\n
+                Este espacio ha sido creado por mujeres y para mujeres que comparten una pasión: el deporte en todas sus formas.\n\n
+                Ya seas atleta profesional, amateur, entrenadora, estudiante o simplemente una amante del deporte en todas sus disciplinas, aquí encontrarás una comunidad que te apoya, te inspira y te entiende.\n\n
+                El deporte no tiene género, pero la industria no tiene en cuenta todas nuestras necesidades, merecemos opciones de calzado deportivo diseñado para nosotras y nuestra anatomía, con la misma tecnología, innovación y variedad que se ofrece a nuestros compañeros masculinos.\n\n
+                Comparte tus experiencias.\n\n
+                Intercambia consejos y entrenamientos.\n\n
+                Habla de nutrición, salud y bienestar.\n\n
+                Conecta con otras mujeres como tú.\n\n
+                Aquí celebramos tus logros, aprendemos de los desafíos y crecemos juntas.\n\n
+                ¡Gracias por ser parte de esta comunidad poderosa y auténtica!\n\n
+                ¡Bienvenida, este es tu espacio!"""
+            },
+        "documentation": {
+            "title": "Pasado y Futuro",
+            "subtitle": "**Datos clave sobre la evolución del calzado deportivo femenino:**",
+            "bullet_1": "1. **Orígenes y primeros modelos:** Aunque el calzado deportivo comenzó a desarrollarse en el siglo XIX, los primeros modelos estaban diseñados exclusivamente para hombres. Las mujeres tenían que adaptar calzado masculino o usar modelos poco adecuados para sus necesidades.",
+            "bullet_2": "2. **Primeras zapatillas deportivas para mujeres:** No fue hasta las décadas de 1920 y 1930 que comenzaron a fabricarse zapatillas deportivas específicamente para mujeres. Sin embargo, la oferta seguía siendo limitada y muchas disciplinas deportivas no contaban con opciones adecuadas.",
+            "bullet_3": "3. **Innovaciones tecnológicas y expansión:** A partir de los años 60, marcas como Adidas y Nike empezaron a desarrollar modelos más especializados para mujeres. Se introdujeron mejoras en amortiguación, soporte y materiales más ligeros.",
+            "bullet_4": "4. **Revolución en los años 70 y 80:** Con el crecimiento del fitness y el running entre las mujeres, las marcas deportivas empezaron a desarrollar modelos con tecnología adaptada a la anatomía femenina. La percepción del calzado deportivo femenino pasó de ser un producto secundario a una necesidad real.",
+            "bullet_5": "5. **Impacto cultural y social:** La lucha por un calzado deportivo adecuado para mujeres no es solo una cuestión de moda, sino de equidad en el deporte. La falta de opciones refleja una brecha de género en la industria deportiva que aún necesita ser abordada.",
+            "bullet_6": "6. **Desafíos actuales:** A pesar de los avances, muchas disciplinas deportivas aún carecen de opciones de calzado diseñadas específicamente para la anatomía femenina. Esto afecta el rendimiento y la comodidad de las atletas.",
+            "bullet_7": "7. **Empoderamiento y representación:** En las últimas décadas, el calzado deportivo femenino ha sido un símbolo de empoderamiento. Las atletas han exigido mayor representación y opciones diseñadas para su rendimiento, impulsando cambios en la industria.",
+        
+        },
         "questionnaire": "Cuestionario",
         "ods": {
             "title": "ODS",
@@ -143,14 +184,14 @@ translations = {
                 }
             }
         },
-        "footprint": "Pisada",
+        "footprint": "Test de Pisada",
         "foro": {
             "title": "Foro",
             "description": "Lugar para discutir y compartir ideas.",
             "comments": "Comentarios",
         },
         "home": {
-            "title": "MAP Girls for TECH",
+            "title": "Boots for Her. Girls Score!!!",
             "presentation": """
             Hola, somos **Maite**, **Ana** y **Pilar** y juntas formamos el equipo MAP Girls for Tech. Participamos por tercer año consecutivo en el proyecto Technovation Girls, cuyo objetivo es acercar la tecnología a las chicas y jóvenes de 8 a 18 años, la idea es aumentar con esta iniciativa la presencia de mujeres en las carreras STEM.
             
@@ -171,6 +212,9 @@ translations = {
             "needYourHelp": "¡¡¡NECESITAMOS VUESTRA AYUDA!!!",
             "thankYou": "Muchas Gracias",
             "questionnaireRequest": "¿Podrías contestar nuestro cuestionario?",
+        },
+        "footprint_types":{
+            "title": "Tipos de Pisada",
         }
 }
 }
@@ -178,11 +222,13 @@ translations = {
 def translate(key):
     # """Obtiene la traducción desde la estructura anidada."""
     keys = key.split(".")
+    
     translation = translations.get(st.session_state.language, {})
 
     for k in keys:
-        translation = translation.get(k, None)
+        if hasattr(translation, 'get'):
+            translation = translation.get(k, None)
         if translation is None:
-            return f"Translation for '{key}' not found"
+            return f"Translation for '{k}' not found"
 
     return translation

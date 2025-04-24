@@ -1,6 +1,6 @@
 import streamlit as st
 from translations import translate
-from utils import parrafo, title, subtitle, buttonLink
+from utils import parrafo, title
 
 title(translate("documentation.title"))
 
