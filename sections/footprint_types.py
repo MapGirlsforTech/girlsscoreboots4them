@@ -10,13 +10,13 @@ def parrafo(text):
 title(translate("footprint_types.title"))
 
 st.markdown("Existen tres tipos de pisadas:")
-St.markdown(" ")
-St.markdown("**Pronadora:** Es aquella en la que el pie apoya por la zona interna. Es la pisada que secorresponde con los pies planos y en la que toda la carga del cuerpo recae hacia la zona interna del pie. En el estudio de la pisada observamos una huella muy ensanchada y un aplanamiento del pie.")
-St.markdown(" ")
-St.markdown("**Supinadora:** Es la pisada en la que el pie apoya por la zona externa. Se corresponde con los pies cavos, en los que se suele observar un arco interno muy elevado y un apoyo muy grande por el borde externo. Suelen presentar sobrecargas en la zona de talón y antepié.")
-St.markdown(" ")
-St.markdown("**Neutra:** Es la pisada en la que el apoyo se distribuye de manera homogénea. El talón apoya centrado y el peso se distribuye de manera correcta durante el paso.")
-St.markdown(" ")
+st.markdown(" ")
+st.markdown("**Pronadora:** Es aquella en la que el pie apoya por la zona interna. Es la pisada que secorresponde con los pies planos y en la que toda la carga del cuerpo recae hacia la zona interna del pie. En el estudio de la pisada observamos una huella muy ensanchada y un aplanamiento del pie.")
+st.markdown(" ")
+st.markdown("**Supinadora:** Es la pisada en la que el pie apoya por la zona externa. Se corresponde con los pies cavos, en los que se suele observar un arco interno muy elevado y un apoyo muy grande por el borde externo. Suelen presentar sobrecargas en la zona de talón y antepié.")
+st.markdown(" ")
+st.markdown("**Neutra:** Es la pisada en la que el apoyo se distribuye de manera homogénea. El talón apoya centrado y el peso se distribuye de manera correcta durante el paso.")
+st.markdown(" ")
 
 # Crear una columna para centrar la imagen
 # Tres columnas, el centro tiene el triple de peso
@@ -25,11 +25,11 @@ col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
     st.image("./images/Tipos-Pisadas_WEB.png", use_container_width=True)
 
-St.markdown(" ")
-St.markdown("Los pies de las mujeres no solo tienen una forma diferente, sino que también son más livianos que los de los hombres y su forma de correr y moverse, es diferente.")
-St.markdown("El hecho de que no existan calzado deportivo específicamente diseñado para mujeres en todas las modalidades deportivas, puede contribuir a una serie de lesiones debido a las diferencias anatómicas entre hombres y mujeres.")
-St.markdown("El calzado deportivo diseñado para hombres no siempre se ajusta bien a la morfología del pie femenino, lo que puede aumentar el riesgo de lesiones.")
-St.markdown(" ")
+st.markdown(" ")
+st.markdown("Los pies de las mujeres no solo tienen una forma diferente, sino que también son más livianos que los de los hombres y su forma de correr y moverse, es diferente.")
+st.markdown("El hecho de que no existan calzado deportivo específicamente diseñado para mujeres en todas las modalidades deportivas, puede contribuir a una serie de lesiones debido a las diferencias anatómicas entre hombres y mujeres.")
+st.markdown("El calzado deportivo diseñado para hombres no siempre se ajusta bien a la morfología del pie femenino, lo que puede aumentar el riesgo de lesiones.")
+st.markdown(" ")
 
 # Crear una columna para centrar la imagen
 # Tres columnas, el centro tiene el triple de peso
