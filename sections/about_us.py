@@ -26,6 +26,15 @@ st.markdown(
 st.markdown(
     """
     <h2 style="text-align: center; color: #4CAF50;">
+        Sobre nosotras
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <h2 style="text-align: center; color: #4CAF50;">
         MAP Girls for Tech
     </h2>
     """,

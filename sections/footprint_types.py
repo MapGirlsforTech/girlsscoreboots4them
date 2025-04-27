@@ -9,6 +9,15 @@ def parrafo(text):
 
 title(translate("footprint_types.title"))
 
+st.markdown(
+    """
+    <h2 style="text-align: center; color: #4CAF50;">
+        Tipos de Pisadas
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown("Existen tres tipos de pisadas:")
 st.markdown(" ")
 st.markdown("**Pronadora:** Es aquella en la que el pie apoya por la zona interna. Es la pisada que secorresponde con los pies planos y en la que toda la carga del cuerpo recae hacia la zona interna del pie. En el estudio de la pisada observamos una huella muy ensanchada y un aplanamiento del pie.")
