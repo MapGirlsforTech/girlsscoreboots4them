@@ -67,7 +67,11 @@ st.markdown("**En resumen:**")
 st.markdown("El uso de calzado deportivo no diseñado para la anatomía femenina puede aumentar el riesgo de lesiones, ya que no brindan el soporte, el ajuste o la comodidad adecuados para las deportistas.")
 st.markdown("Las diferencias en la forma y tamaño de los pies, la flexibilidad articular, y la distribución del peso corporal entre hombres y mujeres son factores que pueden contribuir a estos riesgos.")
 st.markdown("Por esta razón, es fundamental que el calzado deportivo femenino se diseñe teniendo en cuenta las necesidades específicas de las mujeres para reducir el riesgo de lesiones y mejorar el rendimiento.")
-st.markdown("")
-st.markdown("")
-st.markdown("")
-st.markdown("")
+st.markdown(" ")
+st.markdown(" ")
+
+# Crear una columna para centrar la imagen
+col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
+# Usar la columna central para colocar la imagen
+with col2:
+    st.image("./images/LOGO_Boots_1500x1500.png", use_container_width=True)
