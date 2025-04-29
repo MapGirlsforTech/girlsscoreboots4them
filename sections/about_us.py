@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_app import translate
-from utils import title
+from utils import title, buttonLink
 
 # Función para añadir un párrafo recibiendo un texto como parametro
 def parrafo(text):
@@ -10,41 +10,13 @@ def parrafo(text):
 title(translate("about_us.title"))
 
 # Crear un enlace con apariencia de botón para el Corrreo
-st.markdown(
-    """
-    <div style="display: flex; justify-content: right;">
-    <a href="mailto:mapgirlsfortech@gmail.com" target="_blank">
-        <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
-            Contáctanos
-        </button>
-    </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+buttonLink(translate("about_us.contact_us"), "mailto:mapgirlsfortech@gmail.com" )
 
-st.markdown(
-    """
-    <h2 style="text-align: center; color: #4CAF50;">
-        Sobre nosotras
-    </h2>
-    """,
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    """
-    <h2 style="text-align: center; color: #4CAF50;">
-        MAP Girls for Tech
-    </h2>
-    """,
-    unsafe_allow_html=True
-)
+title("MAP Girls for Tech")
 
 # Texto: Presentación del equipo
 
-st.markdown(
-    "Hola, somos **Maite**, **Ana** y **Pilar**, vivimos en Las Rozas de Madrid (España) y juntas formamos el equipo MAP Girls for Tech.")
+parrafo(translate("about_us.presentation"))
 
 # Crear una columna para centrar la imagen
 # Tres columnas, el centro tiene el triple de peso
@@ -52,42 +24,23 @@ col1, col2, col3 = st.columns([1, 3, 1])
 # Usar la columna central para colocar la imagen
 with col2:
     st.image("./images/MAP_WEB.png", use_container_width=True)
-parrafo("Participamos por tercer año consecutivo en el proyecto Technovation Girls, cuyo objetivo es acercar la tecnología a las chicas y jóvenes de 8 a 18 años, la idea es aumentar con esta iniciativa la presencia de mujeres en las carreras STEM.")
-parrafo("Debemos buscar un problema en nuestra comunidad que cumpla uno o varios de los Objetivos  de Desarrollo Sostenible 2030 de la ONU. Durante 12 semanas debemos trabajar para darle una solución a dicho problema y crear una App móvil o una Web App con dicha solución. ")
 
-parrafo("En este programa participan y compiten equipos de chicas de todo el mundo divididas en tres categorías, Beginner, Junior y Senior. ")
-
-parrafo("Las chicas aprendemos entre otras muchas cosas a programar, entrenar modelos de IA, editar videos y a exponer nuestra idea y trabajo en público.")
-
-parrafo("Podéis conocer más sobre este programa a través del siguiente enlace:")
-# technovationchallenge.org
-
-parrafo(" ")
+parrafo(translate("about_us.information"))
 
 # Crear un enlace con apariencia de botón para ir a Technovation
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center;">
-    <a href="https://technovationchallenge.org/" target="_blank">
-        <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
-            Programa Technovation Girls
-        </button>
-    </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+buttonLink(translate("about_us.program_link"), "https://technovationchallenge.org/" )
 
 parrafo(" ")
 parrafo(" ")
-parrafo("Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de calzado deportivo no adecuado al pie femenino puede causar graves lesiones. Esto le ha pasado a nuestra compañera Pilar, así como dea otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:")
+
+parrafo(translate("about_us.problematic"))
 
 # Centrar la cita, pero alineada a la izquierda
 st.markdown(
-    """
+    f"""
     <div style="display: flex; justify-content: center; width: 80%;">
         <blockquote style="text-align: left; font-style: italic; font-size: 1em; border-left: 5px solid #ccc; padding-left: 10px;">
-            "He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas diseñadas especificamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión ha sido la más grave de todas, concretamente en la rodilla y he tenido que estar 4 meses en reposo total."
+        {translate("about_us.quote")}
         </blockquote>
     </div>
     """,
@@ -96,34 +49,18 @@ st.markdown(
 
 parrafo(" ")
 
-parrafo("Ante esta problemática, la falta de calzado deportivo adecuado al pie de la mujer en muchos deportes femeninos, es hacia donde vamos a enfocar nuestro proyecto esta temporada.")
+parrafo(translate("about_us.summary"))
 
-parrafo("Hemos creado un cuestionario con una serie de preguntas que nos ayudarán a darle forma  al proyecto y tratar de buscar una solución a este problema. ")
+parrafo(translate("home.questionnaire"))
 
-st.markdown("<h4 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h4>",
-            unsafe_allow_html=True)
+parrafo(f"<h4 style='text-align: center;'>{translate('home.needYourHelp')}</h4>")
 
+parrafo(f"<h5 style='text-align: center;'>{translate('home.questionnaireRequest')}</h5>")
 
-st.markdown("<h5 style='text-align: center;'>¿Podrías contestar nuestro cuestionario?</h5>",
-            unsafe_allow_html=True)
-
-st.markdown("<h5 style='text-align: center;'>Muchas Gracias</h5>",
-            unsafe_allow_html=True)
-
+parrafo(f"<h5 style='text-align: center;'>{translate('home.thankYou')}</h5>")
 
 # Crear un enlace con apariencia de botón
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center; padding: 20px 0;">
-        <a href="https://forms.gle/ti3ky6UAXbHjB2a87" target="_blank">
-            <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
-                Ir al Cuestionario
-            </button>
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+buttonLink(translate("home.questionnaireLink"), "https://forms.gle/ti3ky6UAXbHjB2a87")
 
 parrafo(" ")
 

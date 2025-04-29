@@ -8,8 +8,8 @@ def format_func(option):
     return languages_options[option]
 
 # # Inicializar estado global si no existe
-# if "language" not in st.session_state:
-#     st.session_state["language"] = "es"  # Idioma por defecto
+if "language" not in st.session_state:
+    st.session_state["language"] = "es"  # Idioma por defecto
 # Genera el selector de idiomas
 st.session_state["language"] = st.sidebar.selectbox(
     "language selector",
@@ -29,7 +29,8 @@ navigation = st.navigation(
             st.Page(f'{pagePath}/footprint_types.py', title=translate("footprint_types.title")),
             st.Page(f'{pagePath}/footprint.py', title=translate("footprint")),
             st.Page(f'{pagePath}/questionnaire.py', title=translate("questionnaire")), 
-            st.Page(f'{pagePath}/ods.py', title=translate("ods.title")), 
+            st.Page(f'{pagePath}/ods.py', title=translate("ods.title")),
+            st.Page(f'{pagePath}/about_us.py', title=translate("about_us.title")), 
         ],
         translate("foro.title"): [
             st.Page(f'{pagePath}/forum/rules.py', title=translate("rules.title")),

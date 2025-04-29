@@ -4,6 +4,22 @@ translations = {
     "en": {
         "home_tab": "Home",  
         "image_identifier": "Image Identifier", 
+        "about_us":{
+            "title": "About Us",
+            "contact_us": "Contact Us",
+            "presentation": "Hello, we are **Maite**, **Ana** and **Pilar**, we live in Las Rozas in Madrid (Spain) and together we form the MAP Girls for Tech team.",
+            "information": '''
+                We participated for the third consecutive year in the Technovation Girls project, whose objective is to bring technology closer to girls and young people from 8 to 18 years old, the idea is to increase with this initiative the presence of women in STEM careers.\n\n
+                We must look for a problem in our community that meets one or more of the UN's 2030 Sustainable Development Goals. For 12 weeks we must work to provide a solution to this problem and create a mobile App or a Web App with said solution.\n\n
+                Teams of girls from all over the world divided into three categories, Beginner, Junior and Senior, participate and compete in this program.\n\n 
+                Girls learn among many other things to program, train AI models, edit videos and expose our idea and work in public.\n\n
+                You can learn more about this program through the following link:\n\n
+        ''',
+        "program_link": "Technovation Girls Program",
+        "problematic": "One problem that has caught our attention is that there are no women's sports shoes for soccer players. It is crucial to use appropriate footwear when playing sports, since the use of sports shoes not suitable for women's feet can cause serious injuries. This has happened to our partner Pilar, as well as many other women, who due to the lack of footwear adapted to their foot, suffer injuries, sometimes significant, since they are forced to resort to male footwear. This is Pilar's testimony:",
+        "quote": '"I have played soccer since I was 5 years old and I love sports, but I have never found boots specifically designed for girls. I have suffered from several ankle injuries, but my last injury has been the most serious of all, specifically in the knee and I have had to spend 4 months in total rest."',
+        "summary": "Faced with this problem, the lack of sports shoes suitable for women's feet in many women's sports is where we are going to focus our project this season."
+        },
         "rules": {
             "title": "Rules",
             "first_rule": "1. **Promotion of Empowerment:** All comments and posts must promote support and respect for women in sports.",
@@ -103,6 +119,12 @@ translations = {
             "needYourHelp": "WE NEED YOUR HELP!!!!!",
             "thankYou": "Thank you very much",
             "questionnaireRequest": "Could you answer our questionnaire?",
+            "introduction": '''
+                The previous testimony is from our partner Pilar, who has suffered the most serious injury from her sports career.\n\n
+                We meet here because we share a need that cannot continue to be ignored: the absence of women's sports shoes for all disciplines. Sports footwear available on the market, mostly made for male anatomy, does not adequately adapt to the morphology of the female foot. It is not just a matter of design and health, it is a matter of fairness, representation and respect for our needs as athletes, as women and as people.\n\n
+                Here, we will share experiences, knowledge and strategies to require sports brands, designers and institutions to recognize and address this need.\n\n 
+                **This forum is our starting point for change.**\n\n
+            '''
         },
         "footprint_types":{
             "title": "Footprint Types",
@@ -112,6 +134,23 @@ translations = {
         "home_tab": "Inicio",  
         "image_identifier": "Identificador de pisada", 
         "forum": "Foro",
+        "about_us":{
+            "title": "Sobre nosotras",
+            "contact_us": "Contact Us",
+            "presentation": "Hola, somos **Maite**, **Ana** y **Pilar**, vivimos en Las Rozas de Madrid (España) y juntas formamos el equipo MAP Girls for Tech.",
+            "information": '''
+                Participamos por tercer año consecutivo en el proyecto Technovation Girls, cuyo objetivo es acercar la tecnología a las chicas y jóvenes de 8 a 18 años, la idea es aumentar con esta iniciativa la presencia de mujeres en las carreras STEM.\n\n
+                Debemos buscar un problema en nuestra comunidad que cumpla uno o varios de los Objetivos  de Desarrollo Sostenible 2030 de la ONU. Durante 12 semanas debemos trabajar para darle una solución a dicho problema y crear una App móvil o una Web App con dicha solución.\n\n
+                En este programa participan y compiten equipos de chicas de todo el mundo divididas en tres categorías, Beginner, Junior y Senior.\n\n
+                Las chicas aprendemos entre otras muchas cosas a programar, entrenar modelos de IA, editar videos y a exponer nuestra idea y trabajo en público.\n\n
+                Podéis conocer más sobre este programa a través del siguiente enlace:\n\n
+                ''',
+            "program_link": "Programa Technovation Girls",
+            "problematic": "Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de calzado deportivo no adecuado al pie femenino puede causar graves lesiones. Esto le ha pasado a nuestra compañera Pilar, así como dea otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:",
+            "quote": '"He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas diseñadas especificamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión ha sido la más grave de todas, concretamente en la rodilla y he tenido que estar 4 meses en reposo total."',
+            "summary": "Ante esta problemática, la falta de calzado deportivo adecuado al pie de la mujer en muchos deportes femeninos, es hacia donde vamos a enfocar nuestro proyecto esta temporada."
+            
+        },
         "rules": {
             "title": "Normas",
             "first_rule": "1. **Promoción del empoderamiento:** Todos los comentarios y publicaciones deben promover el apoyo y el respeto hacia las mujeres en el deporte.",
@@ -212,6 +251,12 @@ translations = {
             "needYourHelp": "¡¡¡NECESITAMOS VUESTRA AYUDA!!!",
             "thankYou": "Muchas Gracias",
             "questionnaireRequest": "¿Podrías contestar nuestro cuestionario?",
+            "introduction": '''
+                El anterior testimonio es de nuestra compañera Pilar, que ha sufrido la lesión más grave de su trayectoria deportiva.\n\n
+                Nos reunimos aquí porque compartimos una necesidad que no puede seguir siendo ignorada: la ausencia de calzado deportivo femenino para todas las disciplinas. El calzado deportivo disponible en el mercado, hecho en su mayoría para la anatomía masculina, no se adapta adecuadamente a la morfología del pie femenino. No es solo una cuestión de diseño y salud, es una cuestión de equidad, de representación y de respeto por nuestras necesidades como atletas, como mujeres y como personas.\n\n
+                Aquí, compartiremos experiencias, conocimientos y estrategias para exigir a las marcas, diseñadores e instituciones deportivas que reconozcan y atiendan esta necesidad.\n\n
+                **Este foro es nuestro punto de partida para el cambio.**\n\n
+            '''
         },
         "footprint_types":{
             "title": "Tipos de Pisada",
