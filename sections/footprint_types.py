@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_app import translate
-from utils import title
+from utils import title, subtitle, image_center
 
 # Función para añadir un párrafo recibiendo un texto como parametro
 def parrafo(text):
@@ -9,75 +9,22 @@ def parrafo(text):
 
 title(translate("footprint_types.title"))
 
-st.markdown(
-    """
-    <h2 style="text-align: center; color: #4CAF50;">
-        Tipos de Pisadas
-    </h2>
-    """,
-    unsafe_allow_html=True
-)
+subtitle(translate("footprint_types.types_title"), "left")
+parrafo(translate("footprint_types.types"))
 
-st.markdown("Existen tres tipos de pisadas:")
-st.markdown(" ")
-st.markdown("**Pronadora:** Es aquella en la que el pie apoya por la zona interna. Es la pisada que secorresponde con los pies planos y en la que toda la carga del cuerpo recae hacia la zona interna del pie. En el estudio de la pisada observamos una huella muy ensanchada y un aplanamiento del pie.")
-st.markdown(" ")
-st.markdown("**Supinadora:** Es la pisada en la que el pie apoya por la zona externa. Se corresponde con los pies cavos, en los que se suele observar un arco interno muy elevado y un apoyo muy grande por el borde externo. Suelen presentar sobrecargas en la zona de talón y antepié.")
-st.markdown(" ")
-st.markdown("**Neutra:** Es la pisada en la que el apoyo se distribuye de manera homogénea. El talón apoya centrado y el peso se distribuye de manera correcta durante el paso.")
-st.markdown(" ")
+image_center("./images/Tipos-Pisadas_WEB.png")
 
-# Crear una columna para centrar la imagen
-# Tres columnas, el centro tiene el triple de peso
-col1, col2, col3 = st.columns([1, 3, 1])
-# Usar la columna central para colocar la imagen
-with col2:
-    st.image("./images/Tipos-Pisadas_WEB.png", use_container_width=True)
+parrafo(translate("footprint_types.second_text"))
 
-st.markdown(" ")
-st.markdown("Los pies de las mujeres no solo tienen una forma diferente, sino que también son más livianos que los de los hombres y su forma de correr y moverse, es diferente.")
-st.markdown("El hecho de que no existan calzado deportivo específicamente diseñado para mujeres en todas las modalidades deportivas, puede contribuir a una serie de lesiones debido a las diferencias anatómicas entre hombres y mujeres.")
-st.markdown("El calzado deportivo diseñado para hombres no siempre se ajusta bien a la morfología del pie femenino, lo que puede aumentar el riesgo de lesiones.")
-st.markdown(" ")
+image_center("./images/Diferencias Pie Hombre-mujer_WEB.png")
 
-# Crear una columna para centrar la imagen
-# Tres columnas, el centro tiene el triple de peso
-col1, col2, col3 = st.columns([1, 3, 1])
-# Usar la columna central para colocar la imagen
-with col2:
-    st.image("./images/Diferencias Pie Hombre-mujer_WEB.png", use_container_width=True)
-
-st.markdown(" ")
-st.markdown("Razones por las que esto puede ocurrir:")
-st.markdown(" ")
-st.markdown("**1. Diferencias en la forma del pie:**")
-st.markdown("Los pies de las mujeres tienden a ser más estrechos en el talón y más anchos en la zona de los dedos en comparación con los pies de los hombres. Si el calzado no está diseñado para ajustarse a esta forma, puede haber un ajuste incómodo o inadecuado, lo que aumenta el riesgo de:")
-st.markdown("Ampollas y rozaduras: Un mal ajuste puede generar fricción en áreas específicas, lo que resulta en lesiones cutáneas como ampollas.")
-st.markdown("Dolores en los pies y las articulaciones: Un ajuste inadecuado puede causar dolor en el pie o en la pierna, ya que no distribuye de manera adecuada las fuerzas durante el movimiento.")
-st.markdown(" ")
-st.markdown("**2. Tamaño y distribución del pie:**")
-st.markdown("Las mujeres, en promedio, tienen pies más pequeños y ligeros que los hombres. Esto puede afectar el soporte y la estabilidad al usar calzado deportivo diseñado para hombres, que generalmente están hechas con una distribución del peso y un diseño que no toma en cuenta estas diferencias. Esto puede llevar a:")
-st.markdown("Falta de soporte en el arco: Las botas diseñadas para hombres pueden no proporcionar un soporte adecuado en el arco del pie femenino, lo que puede contribuir a lesiones en los ligamentos y tendones.")
-st.markdown("Estrés en las rodillas y caderas: El desajuste en las botas puede alterar la biomecánica del movimiento al correr o cambiar de dirección, lo que puede aumentar la presión en las rodillas y las caderas, favoreciendo lesiones como esguinces o tendinitis.")
-st.markdown(" ")
-st.markdown("**3. Lesiones en el tobillo:**")
-st.markdown("Las mujeres tienden a tener una mayor flexibilidad en las articulaciones, especialmente en los tobillos. Si el calzado no ofrece un soporte adecuado, esto puede hacer que los tobillos sean más propensos a lesiones como:")
-st.markdown("Esguinces de tobillo: Un calzado que no se ajusta correctamente o que no tiene suficiente soporte lateral puede aumentar el riesgo de esguinces, que son comunes en el fútbol debido a los cambios rápidos de dirección y la exigencia física.")
-st.markdown(" ")
-st.markdown("**4. Impacto en el rendimiento:**")
-st.markdown("El calzado deportivo mal ajustado puede afectar el rendimiento al no proporcionar el nivel adecuado de comodidad y soporte. Esto puede hacer que la deportista cambie su postura o forma de correr para adaptarse al calzado, lo que aumenta el riesgo de sobrecargar ciertas partes del cuerpo (por ejemplo, las rodillas, la espalda o las caderas), lo que puede derivar en lesiones crónicas.")
-st.markdown(" ")
-st.markdown("**5. Lesiones por falta de amortiguación:**")
-st.markdown("Las mujeres tienden a ser más propensas a sufrir lesiones relacionadas con el impacto debido a la diferencia en la distribución del peso corporal. Si el calzado no tiene suficiente amortiguación o si están diseñadas con una estructura menos adecuada para las mujeres, pueden surgir problemas como:")
-st.markdown("Lesiones por estrés en los huesos (fracturas por sobrecarga): La falta de absorción adecuada de impactos puede aumentar el riesgo de fracturas por sobrecarga, especialmente en los pies y las piernas.")
-st.markdown("Dolores articulares: La falta de una buena amortiguación puede generar molestias en las rodillas o la espalda debido a los golpes repetitivos durante la practica deportiva.")
-st.markdown(" ")
-st.markdown("**En resumen:**")
-st.markdown("El uso de calzado deportivo no diseñado para la anatomía femenina puede aumentar el riesgo de lesiones, ya que no brindan el soporte, el ajuste o la comodidad adecuados para las deportistas.")
-st.markdown("Las diferencias en la forma y tamaño de los pies, la flexibilidad articular, y la distribución del peso corporal entre hombres y mujeres son factores que pueden contribuir a estos riesgos.")
-st.markdown("Por esta razón, es fundamental que el calzado deportivo femenino se diseñe teniendo en cuenta las necesidades específicas de las mujeres para reducir el riesgo de lesiones y mejorar el rendimiento.")
-st.markdown(" ")
-st.markdown(" ")
+subtitle(translate("footprint_types.reasons_title"), "left")
+parrafo(translate("footprint_types.reason_1"))
+parrafo(translate("footprint_types.reason_2"))
+parrafo(translate("footprint_types.reason_3"))
+parrafo(translate("footprint_types.reason_4"))
+parrafo(translate("footprint_types.reason_5"))
+parrafo(translate("footprint_types.reason_summary"))
 
 # Crear una columna para centrar la imagen
 col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso

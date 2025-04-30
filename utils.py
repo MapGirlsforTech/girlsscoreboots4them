@@ -33,9 +33,9 @@ def title(text):
         unsafe_allow_html=True
     )
 
-def subtitle(text):
+def subtitle(text, side="center"):
         st.markdown(f"""
-    <h4 style="text-align: center; color: {primaryColor};">
+    <h4 style="text-align: {side}; color: {primaryColor};">
         {text}
     </h4>
     """,
@@ -58,3 +58,9 @@ def comment_with_avatar(user, text, date, avatar_url):
         </div>
         """, unsafe_allow_html=True
     )
+
+def image_center(path):
+    col1, col2, col3 = st.columns([1, 3, 1])
+    # Usar la columna central para colocar la imagen
+    with col2:
+        st.image(path, use_container_width=True)

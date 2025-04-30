@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit_app import translate
 from utils import title, subtitle, parrafo
-from translations import translations
 
 title(translate("ods.title"))
 

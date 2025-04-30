@@ -1,5 +1,7 @@
 import streamlit as st
 from translations import translate
+st.cache_data.clear()
+st.cache_resource.clear()
 
 # Helper para traducir los textos
 languages_options = {"en": "English", "es": "Español"}
@@ -28,7 +30,7 @@ navigation = st.navigation(
             st.Page(f'{pagePath}/documentation.py', title=translate("documentation.title")), 
             st.Page(f'{pagePath}/footprint_types.py', title=translate("footprint_types.title")),
             st.Page(f'{pagePath}/footprint.py', title=translate("footprint")),
-            st.Page(f'{pagePath}/questionnaire.py', title=translate("questionnaire")), 
+            st.Page(f'{pagePath}/questionnaire.py', title=translate("questionnaire.title")), 
             st.Page(f'{pagePath}/ods.py', title=translate("ods.title")),
             st.Page(f'{pagePath}/about_us.py', title=translate("about_us.title")), 
         ],

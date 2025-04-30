@@ -3,7 +3,8 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image, ImageOps
 import h5py
-from streamlit_app import translate
+from translations import translate
+from utils import parrafo, title
 
 # pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
 
@@ -22,7 +23,9 @@ from streamlit_app import translate
 # assert model_config_string.find('"groups": 1,') == -1
 
 # Title
-st.title("Image Classification")
+title(translate("footprint_test.title"))
+
+parrafo(translate("footprint_test.text"))
 
 # load model, set cache to prevent reloading
 
