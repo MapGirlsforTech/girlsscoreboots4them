@@ -16,7 +16,7 @@ image_center("./images/Tipos-Pisadas_WEB.png")
 
 parrafo(translate("footprint_types.second_text"))
 
-image_center("./images/Diferencias Pie Hombre-mujer_WEB.png")
+image_center("./images/Diferencias_Pie_Hombre_mujer_WEB.png")
 
 subtitle(translate("footprint_types.reasons_title"), "left")
 parrafo(translate("footprint_types.reason_1"))
