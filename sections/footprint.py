@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image, ImageOps
 import h5py
 from translations import translate
-from utils import parrafo, title
+from utils import parrafo, title, subtitle
 
 # pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
 
@@ -13,14 +13,14 @@ from utils import parrafo, title
 # st.header(translate("footprint"))
 
 # Necesario porque arregla un error en el modelo.
-# f = h5py.File("model/keras_model.h5", mode="r+")
-# model_config_string = f.attrs.get("model_config")
-# if model_config_string.find('"groups": 1,') != -1:
-#     model_config_string = model_config_string.replace('"groups": 1,', '')
-# f.attrs.modify('model_config', model_config_string)
-# f.flush()
-# model_config_string = f.attrs.get("model_config")
-# assert model_config_string.find('"groups": 1,') == -1
+f = h5py.File("model/keras_model.h5", mode="r+")
+model_config_string = f.attrs.get("model_config")
+if model_config_string.find('"groups": 1,') != -1:
+    model_config_string = model_config_string.replace('"groups": 1,', '')
+f.attrs.modify('model_config', model_config_string)
+f.flush()
+model_config_string = f.attrs.get("model_config")
+assert model_config_string.find('"groups": 1,') == -1
 
 # Title
 title(translate("footprint_test.title"))
@@ -63,13 +63,14 @@ if uploaded_file:
 
     # Predicts the model
     prediction = model.predict(data)
+    print(list(class_names))
+ 
     index = np.argmax(prediction)
     class_name = class_names[index]
     confidence_score = prediction[0][index]
 
     # Print prediction and confidence score
-    st.text(f"Class: {class_name[2:]}")
-    st.text(f"Confidence Score: {confidence_score}" )
+    subtitle(f"{class_name[2:]} {"{:.2%}".format(confidence_score)}")
     st.image(uploaded_file)
 
 
