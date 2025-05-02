@@ -13,12 +13,6 @@ parrafo(translate("questionnaire.thanks_message"))
 
 buttonLink(translate("home.questionnaireLink"), "https://forms.gle/ti3ky6UAXbHjB2a87")
 
-# Crear una columna para centrar la imagen
-col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
-# Usar la columna central para colocar la imagen
-with col2:
-    st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
-
 title(translate("questionnaire.charts_title"))
 
 df = pd.DataFrame(data)
