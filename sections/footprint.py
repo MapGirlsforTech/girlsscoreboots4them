@@ -5,22 +5,23 @@ from PIL import Image, ImageOps
 import h5py
 from translations import translate
 from utils import parrafo, title, subtitle
-
-# pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
-
+from keras.models import load_model  # TensorFlow is required for Keras to work
+from keras.layers import Input
+from keras.models import Model
+from keras.layers import TFSMLayer
 
 
 # st.header(translate("footprint"))
 
 # Necesario porque arregla un error en el modelo.
-f = h5py.File("model/keras_model.h5", mode="r+")
-model_config_string = f.attrs.get("model_config")
-if model_config_string.find('"groups": 1,') != -1:
-    model_config_string = model_config_string.replace('"groups": 1,', '')
-f.attrs.modify('model_config', model_config_string)
-f.flush()
-model_config_string = f.attrs.get("model_config")
-assert model_config_string.find('"groups": 1,') == -1
+# f = h5py.File("model/keras_model.h5", mode="r+")
+# model_config_string = f.attrs.get("model_config")
+# if model_config_string.find('"groups": 1,') != -1:
+#     model_config_string = model_config_string.replace('"groups": 1,', '')
+# f.attrs.modify('model_config', model_config_string)
+# f.flush()
+# model_config_string = f.attrs.get("model_config")
+# assert model_config_string.find('"groups": 1,') == -1
 
 # Title
 title(translate("footprint_test.title"))
@@ -34,7 +35,9 @@ parrafo(translate("footprint_test.text"))
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = tf.keras.models.load_model("model/keras_model.h5")
+layer = TFSMLayer("model",call_endpoint='serving_default')
+input_tensor = Input(shape=(224, 224, 3))
+model = Model(inputs=input_tensor, outputs=layer(input_tensor))
 
 # # Load the labels
 class_names = open("model/labels.txt", "r").readlines()
@@ -62,12 +65,16 @@ if uploaded_file:
     data[0] = normalized_image_array
 
     # Predicts the model
-    prediction = model.predict(data)
+    raw_output = model.predict(data)
+    prediction = list(raw_output.values())[0][0]
     print(list(class_names))
- 
+    
+    print('--------')
+    print(prediction)
+    print('--------')
     index = np.argmax(prediction)
     class_name = class_names[index]
-    confidence_score = prediction[0][index]
+    confidence_score = prediction[index]
 
     # Print prediction and confidence score
     subtitle(f"{class_name[2:]} {"{:.2%}".format(confidence_score)}")
