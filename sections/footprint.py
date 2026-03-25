@@ -9,7 +9,7 @@ from keras.models import load_model  # TensorFlow is required for Keras to work
 from keras.layers import Input
 from keras.models import Model
 from keras.layers import TFSMLayer
-
+from components.chat_panel import render_chat_panel
 
 # st.header(translate("footprint"))
 
@@ -68,7 +68,7 @@ if uploaded_file:
     raw_output = model.predict(data)
     prediction = list(raw_output.values())[0][0]
     print(list(class_names))
-    
+
     print('--------')
     print(prediction)
     print('--------')
@@ -77,7 +77,13 @@ if uploaded_file:
     confidence_score = prediction[index]
 
     # Print prediction and confidence score
-    subtitle(f"{class_name[2:]} {"{:.2%}".format(confidence_score)}")
+    subtitle(f"{class_name[2:]} {confidence_score:.2%}")
     st.image(uploaded_file)
+
+    render_chat_panel(
+        foot_type=class_name[2:],
+        confidence=confidence_score,
+        state_key="foot_chat"
+    )
 
 
