@@ -115,8 +115,12 @@ translations = {
                 To do this you must obtain an image of your footprint and drag it to the classifier.\n\n 
                 After analyzing it, it will indicate with its corresponding probability, which is your type of footprint.\n\n
                 `Important: This test is indicative, to obtain a clinically correct result, it must be performed by a qualified professional.`
-            '''
-            },
+            ''',
+            "chat_title": "Footprint AI Powered Assistant",
+            "chat_warning": "This tool provides general guidance and is not a substitute for evaluation from a health professional.",
+            "chat_clear_button": "Clear chat",
+            "chat_placeholder": "Ask me anything about foot types..."
+        },
         "footwear": "Footwear",
         "foro": {
             "title": "Forum",
@@ -346,33 +350,33 @@ translations = {
             "title": "Tipos de Pisada",
             "types_title": "Existen tres tipos de pisadas:",
             "types": """
-    **Pronadora:** Es aquella en la que el pie apoya por la zona interna. Es la pisada que secorresponde con los pies planos y en la que toda la carga del cuerpo recae hacia la zona interna del pie. En el estudio de la pisada observamos una huella muy ensanchada y un aplanamiento del pie.\n\n
-    **Supinadora:** Es la pisada en la que el pie apoya por la zona externa. Se corresponde con los pies cavos, en los que se suele observar un arco interno muy elevado y un apoyo muy grande por el borde externo. Suelen presentar sobrecargas en la zona de talón y antepié.\n\n
-    **Neutra:** Es la pisada en la que el apoyo se distribuye de manera homogénea. El talón apoya centrado y el peso se distribuye de manera correcta durante el paso.\n\n
-        """,
+                **Pronadora:** Es aquella en la que el pie apoya por la zona interna. Es la pisada que secorresponde con los pies planos y en la que toda la carga del cuerpo recae hacia la zona interna del pie. En el estudio de la pisada observamos una huella muy ensanchada y un aplanamiento del pie.\n\n
+                **Supinadora:** Es la pisada en la que el pie apoya por la zona externa. Se corresponde con los pies cavos, en los que se suele observar un arco interno muy elevado y un apoyo muy grande por el borde externo. Suelen presentar sobrecargas en la zona de talón y antepié.\n\n
+                **Neutra:** Es la pisada en la que el apoyo se distribuye de manera homogénea. El talón apoya centrado y el peso se distribuye de manera correcta durante el paso.\n\n
+            """,
             "second_text": """
-        Los pies de las mujeres no solo tienen una forma diferente, sino que también son más livianos que los de los hombres y su forma de correr y moverse, es diferente.\n\n
-        El hecho de que no existan calzado deportivo específicamente diseñado para mujeres en todas las modalidades deportivas, puede contribuir a una serie de lesiones debido a las diferencias anatómicas entre hombres y mujeres.\n\n
-        El calzado deportivo diseñado para hombres no siempre se ajusta bien a la morfología del pie femenino, lo que puede aumentar el riesgo de lesiones.\n\n
-        """,
+                Los pies de las mujeres no solo tienen una forma diferente, sino que también son más livianos que los de los hombres y su forma de correr y moverse, es diferente.\n\n
+                El hecho de que no existan calzado deportivo específicamente diseñado para mujeres en todas las modalidades deportivas, puede contribuir a una serie de lesiones debido a las diferencias anatómicas entre hombres y mujeres.\n\n
+                El calzado deportivo diseñado para hombres no siempre se ajusta bien a la morfología del pie femenino, lo que puede aumentar el riesgo de lesiones.\n\n
+            """,
             "reasons_title": "Razones por las que esto puede ocurrir:",
             "reason_1": """
-        **1. Diferencias en la forma del pie:**\n\n
-        Los pies de las mujeres tienden a ser más estrechos en el talón y más anchos en la zona de los dedos en comparación con los pies de los hombres. Si el calzado no está diseñado para ajustarse a esta forma, puede haber un ajuste incómodo o inadecuado, lo que aumenta el riesgo de:\n\n
-        Ampollas y rozaduras: Un mal ajuste puede generar fricción en áreas específicas, lo que resulta en lesiones cutáneas como ampollas.\n\n
-        Dolores en los pies y las articulaciones: Un ajuste inadecuado puede causar dolor en el pie o en la pierna, ya que no distribuye de manera adecuada las fuerzas durante el movimiento.\n\n
-        """,
-            "reason_2": """
-         **2. Tamaño y distribución del pie:**\n\n
-         Las mujeres, en promedio, tienen pies más pequeños y ligeros que los hombres. Esto puede afectar el soporte y la estabilidad al usar calzado deportivo diseñado para hombres, que generalmente están hechas con una distribución del peso y un diseño que no toma en cuenta estas diferencias. Esto puede llevar a:\n\n
-         Falta de soporte en el arco: Las botas diseñadas para hombres pueden no proporcionar un soporte adecuado en el arco del pie femenino, lo que puede contribuir a lesiones en los ligamentos y tendones.\n\n
-         Estrés en las rodillas y caderas: El desajuste en las botas puede alterar la biomecánica del movimiento al correr o cambiar de dirección, lo que puede aumentar la presión en las rodillas y las caderas, favoreciendo lesiones como esguinces o tendinitis.\n\n
-        """,
-            "reason_3": """
-         **3. Lesiones en el tobillo:**\n\n
-         Las mujeres tienden a tener una mayor flexibilidad en las articulaciones, especialmente en los tobillos. Si el calzado no ofrece un soporte adecuado, esto puede hacer que los tobillos sean más propensos a lesiones como:\n\n
-         Esguinces de tobillo: Un calzado que no se ajusta correctamente o que no tiene suficiente soporte lateral puede aumentar el riesgo de esguinces, que son comunes en el fútbol debido a los cambios rápidos de dirección y la exigencia física.\n\n
-        """,
+            **1. Diferencias en la forma del pie:**\n\n
+            Los pies de las mujeres tienden a ser más estrechos en el talón y más anchos en la zona de los dedos en comparación con los pies de los hombres. Si el calzado no está diseñado para ajustarse a esta forma, puede haber un ajuste incómodo o inadecuado, lo que aumenta el riesgo de:\n\n
+            Ampollas y rozaduras: Un mal ajuste puede generar fricción en áreas específicas, lo que resulta en lesiones cutáneas como ampollas.\n\n
+            Dolores en los pies y las articulaciones: Un ajuste inadecuado puede causar dolor en el pie o en la pierna, ya que no distribuye de manera adecuada las fuerzas durante el movimiento.\n\n
+            """,
+                "reason_2": """
+            **2. Tamaño y distribución del pie:**\n\n
+            Las mujeres, en promedio, tienen pies más pequeños y ligeros que los hombres. Esto puede afectar el soporte y la estabilidad al usar calzado deportivo diseñado para hombres, que generalmente están hechas con una distribución del peso y un diseño que no toma en cuenta estas diferencias. Esto puede llevar a:\n\n
+            Falta de soporte en el arco: Las botas diseñadas para hombres pueden no proporcionar un soporte adecuado en el arco del pie femenino, lo que puede contribuir a lesiones en los ligamentos y tendones.\n\n
+            Estrés en las rodillas y caderas: El desajuste en las botas puede alterar la biomecánica del movimiento al correr o cambiar de dirección, lo que puede aumentar la presión en las rodillas y las caderas, favoreciendo lesiones como esguinces o tendinitis.\n\n
+            """,
+                "reason_3": """
+            **3. Lesiones en el tobillo:**\n\n
+            Las mujeres tienden a tener una mayor flexibilidad en las articulaciones, especialmente en los tobillos. Si el calzado no ofrece un soporte adecuado, esto puede hacer que los tobillos sean más propensos a lesiones como:\n\n
+            Esguinces de tobillo: Un calzado que no se ajusta correctamente o que no tiene suficiente soporte lateral puede aumentar el riesgo de esguinces, que son comunes en el fútbol debido a los cambios rápidos de dirección y la exigencia física.\n\n
+            """,
             "reason_4": """
          **4. Impacto en el rendimiento:**\n\n
          El calzado deportivo mal ajustado puede afectar el rendimiento al no proporcionar el nivel adecuado de comodidad y soporte. Esto puede hacer que la deportista cambie su postura o forma de correr para adaptarse al calzado, lo que aumenta el riesgo de sobrecargar ciertas partes del cuerpo (por ejemplo, las rodillas, la espalda o las caderas), lo que puede derivar en lesiones crónicas.\n\n
@@ -391,14 +395,18 @@ translations = {
          """,
         },
         "footprint_test": {
-        "title": "Test de pisada",
-        "text": '''
-            Esta herramienta diseñada con Inteligencia Artificial, puede ayudarte a conocer tu tipo de pisada.\n\n
-            Para ello deberás obtener una imagen de tu pisada y arrastarla al clasificador.\n\n 
-            Trás analizarla, te indicará con su correspondiente probabilidad, cual es tu tipo de pisada.\n\n
-            `Importante: Este test, es orientativo, para obtener un resultado clinicamente correcto, deberá ser realizado por un profesional cualificado.`
-        '''
-        },
+            "title": "Test de pisada",
+            "text": '''
+                Esta herramienta diseñada con Inteligencia Artificial, puede ayudarte a conocer tu tipo de pisada.\n\n
+                Para ello deberás obtener una imagen de tu pisada y arrastarla al clasificador.\n\n 
+                Trás analizarla, te indicará con su correspondiente probabilidad, cual es tu tipo de pisada.\n\n
+                `Importante: Este test, es orientativo, para obtener un resultado clinicamente correcto, deberá ser realizado por un profesional cualificado.`
+            ''',
+            "chat_title": "Asistente educativo sobre la pisada",
+            "chat_warning": "Esta herramienta proporciona orientación general y no sustituye la evaluación de un profesional de la salud.",
+            "chat_clear_button": "Limpiar chat",
+            "chat_placeholder": "Pregunta algo sobre el resultado..."
+        }
     },
 }
 

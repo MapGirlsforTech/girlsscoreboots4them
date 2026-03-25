@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+from translations import translate
 
 # =========================
 # Config cliente
@@ -24,7 +25,7 @@ def _add_message(state_key: str, role: str, content: str) -> None:
 
 
 def _has_red_flags(text: str) -> bool:
-    flags = [
+    flags_es = [
         "dolor fuerte",
         "mucho dolor",
         "inflamación",
@@ -42,29 +43,63 @@ def _has_red_flags(text: str) -> bool:
         "empeoro",
         "entumecimiento"
     ]
+    flags_en = [
+        "severe pain",
+        "much pain",
+        "inflammation",
+        "swelling",
+        "injury",
+        "sprain",
+        "can't walk",
+        "can't bear weight",
+        "fever",
+        "worsens",
+        "getting worse",
+        "numbness"
+    ]
     lower = text.lower()
-    return any(flag in lower for flag in flags)
+    return any(flag in lower for flag in flags_es + flags_en)
 
 
 def _build_system_prompt(foot_type: str, confidence: float) -> str:
-    return f"""
-Eres un asistente educativo sobre tipos de pisada.
+    if st.session_state.language == "es":
+        return f"""
+            Eres un asistente educativo sobre tipos de pisada.
 
-Contexto:
-- Tipo de pisada detectada por la app: {foot_type}
-- Confianza estimada del modelo: {confidence:.2f}
+            Contexto:
+            - Tipo de pisada detectada por la app: {foot_type}
+            - Confianza estimada del modelo: {confidence:.2f}
 
-Reglas:
-- Responde en español.
-- Usa lenguaje simple para adolescentes de 13 años.
-- Da solo orientación general y educativa.
-- No des diagnósticos médicos.
-- No indiques tratamientos personalizados.
-- No recomiendes medicamentos.
-- Si la persona menciona dolor fuerte, lesión, inflamación, fiebre,
-  empeoramiento o dificultad para caminar, indica consulta profesional.
-- Máximo 120 palabras.
-"""
+            Reglas:
+            - Responde en español.
+            - Usa lenguaje simple para adolescentes de 13 años.
+            - Da solo orientación general y educativa.
+            - No des diagnósticos médicos.
+            - No indiques tratamientos personalizados.
+            - No recomiendes medicamentos.
+            - Si la persona menciona dolor fuerte, lesión, inflamación, fiebre,
+            empeoramiento o dificultad para caminar, indica consulta profesional.
+            - Máximo 120 palabras.
+            """
+    else:
+        return f"""
+            You are an educational assistant on types of footprint. 
+            Context: 
+            - Type of footprint detected by the app: {foot_type} 
+            - Estimated model confidence: {confidence:.2f} 
+
+            Rules: 
+            - Answer in English. 
+            - Use simple language for 13-year-olds. 
+            - Gives only general and educational guidance. 
+            - Do not give medical diagnoses. 
+            - Do not indicate personalized treatments. 
+            - Do not recommend medications. 
+            - If the person mentions severe pain, injury, inflammation, fever, worsening or difficulty walking, indicates professional consultation. 
+            - Maximum 120 words.
+        """ 
+    
+    
 
 
 def _generate_answer(
@@ -74,11 +109,18 @@ def _generate_answer(
     user_message: str
 ) -> str:
     if _has_red_flags(user_message):
-        return (
-            "Esta app brinda orientación general y no reemplaza una consulta médica. "
-            "Si hay dolor fuerte, inflamación, lesión o dificultad para caminar, "
-            "conviene consultar con un médico, traumatólogo, podólogo o fisioterapeuta."
-        )
+        if st.session_state.language == "es":
+            return (
+                "Esta app brinda orientación general y no reemplaza una consulta médica. "
+                "Si hay dolor fuerte, inflamación, lesión o dificultad para caminar, "
+                "conviene consultar con un médico, traumatólogo, podólogo o fisioterapeuta."
+            )   
+        else:
+            return (
+                "This app provides general guidance and does not replace a medical consultation. "
+                "If there is severe pain, inflammation, injury, or difficulty walking, "
+                "it is advisable to consult a doctor, traumatologist, podiatrist, or physiotherapist."
+            )
 
     input_items = [
         {
@@ -108,15 +150,21 @@ def _generate_answer(
 
 def _set_welcome_message(state_key: str, foot_type: str, confidence: float) -> None:
     messages = _get_messages(state_key)
+    initial_message = (
+        f"The app detected a **{foot_type.strip()}** gait "
+        f"with an estimated confidence of **{confidence:.0%}**. "
+        "I can explain what it means and give you general advice."
+    ) if st.session_state.language == "en" else (
+        f"La app detectó una pisada **{foot_type.strip()}** "
+        f"con una confianza estimada de **{confidence:.0%}**. "
+        "Puedo explicarte qué significa y darte consejos generales."
+    )
+
     if not messages:
         _add_message(
             state_key,
             "assistant",
-            (
-                f"La app detectó una pisada **{foot_type}** "
-                f"con una confianza estimada de **{confidence:.0%}**. "
-                "Puedo explicarte qué significa y darte consejos generales."
-            )
+            initial_message
         )
 
 
@@ -176,15 +224,11 @@ def _render_quick_actions(state_key: str, foot_type: str, confidence: float) -> 
 def render_chat_panel(
     foot_type: str,
     confidence: float,
-    state_key: str = "chat_messages",
-    title: str = "Asistente educativo sobre la pisada"
-) -> None:
-    st.subheader(title)
+    state_key: str = "chat_messages"
+):
+    st.subheader(translate("footprint_test.chat_title"))
 
-    st.warning(
-        "Esta herramienta ofrece orientación general y no reemplaza la evaluación "
-        "de un profesional de la salud."
-    )
+    st.warning(translate("footprint_test.chat_warning"))
 
     _set_welcome_message(state_key, foot_type, confidence)
 
@@ -192,7 +236,7 @@ def render_chat_panel(
     _render_history(state_key)
 
     user_text = st.chat_input(
-        "Pregunta algo sobre el resultado...",
+        translate("footprint_test.chat_placeholder"),
         key=f"{state_key}_input"
     )
 
@@ -214,6 +258,6 @@ def render_chat_panel(
 
         _add_message(state_key, "assistant", answer)
 
-    if st.button("Limpiar chat", key=f"{state_key}_clear"):
+    if st.button(translate("footprint_test.chat_clear_button"), key=f"{state_key}_clear"):
         st.session_state[state_key] = []
         st.rerun()
